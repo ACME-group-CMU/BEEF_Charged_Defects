@@ -1,0 +1,15 @@
+&INPUTPP
+    prefix = 'PbI2'
+    outdir = './'
+    filplot = 'temp.data'
+    plot_num = 7
+    kpoint(1) = 1
+    kband(1) = 431
+/ 
+&PLOT
+    nfile = 1
+    filepp(1) = 'temp.data'
+    output_format = 6
+    fileout = 'espresso_plot_num_7.cube'
+    iflag = 3
+/ 

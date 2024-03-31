@@ -1,0 +1,5 @@
+/trace/home/atimmins/.conda/envs/defect_tracking/lib/python3.8/site-packages/mp_api/client/mprester.py:182: UserWarning: mpcontribs-client not installed. Install the package to query MPContribs data, or construct pourbaix diagrams: 'pip install mpcontribs-client'
+  warnings.warn(
+Retrieving MaterialsDoc documents:   0%|          | 0/1 [00:00<?, ?it/s]Retrieving MaterialsDoc documents: 100%|██████████| 1/1 [00:00<00:00, 28926.23it/s]
+/trace/home/atimmins/.conda/envs/defect_tracking/lib/python3.8/site-packages/mp_api/client/core/client.py:892: UserWarning: Document primary key has changed from mp-22893 to mp-22893, returning data for mp-22893 in materials/dielectric route.    
+  warnings.warn(

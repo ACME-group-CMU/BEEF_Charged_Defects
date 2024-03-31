@@ -1,0 +1,15 @@
+&INPUTPP
+    prefix = 'diamond'
+    outdir = './'
+    filplot = 'temp.data'
+    plot_num = 1
+/ 
+&PLOT
+    nfile = 1
+    filepp(1) = 'temp.data'
+    output_format = 3
+    fileout = 'espresso_plot_num_1.xsf'
+    iflag = 3
+    interpolation='bspline'
+    nx = 135,ny = 135,nz = 135
+/

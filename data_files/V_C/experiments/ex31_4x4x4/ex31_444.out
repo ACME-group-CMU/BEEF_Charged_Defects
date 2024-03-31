@@ -1,0 +1,507 @@
+
+ submitted Quantum Espresso job
+hostname
+trace08.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 1022, 'defect_level': 'shallow', 'band_by_charge': {-2: 1022, -1: 1022, 0: 1022, 1: 1022, 2: 1022}, 'sigma_by_charge': {}, 'epsilon': 5.829713979999983, 'grid_size': [180, 180, 180]}}
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -2067.280439058516 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132305.93988421283 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: VAC, {'C': -1}
+allowed_defect_composition: defaultdict(<class 'float'>, {'C': 512.0})
+VAC_C511_[0.89309729 2.67920589 0.89309729] C
+New unique defect: VAC_C511_[0.89309729 2.67920589 0.89309729] C
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: VAC_C511_[0.89309729 2.67920589 0.89309729] C
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 1022, 'defect_level': 'shallow', 'band_by_charge': {-2: 1022, -1: 1022, 0: 1022, 1: 1022, 2: 1022}, 'sigma_by_charge': {}, 'epsilon': 5.829713979999983, 'grid_size': [180, 180, 180]}}
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 0
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132040.6184472268 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 1
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/1
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/1
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132054.84760524036 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: VAC, num: 1, charge: -1
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-1
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-1
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132025.74994752338 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 2
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/2
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/2
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132068.57087855373 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: VAC, num: 1, charge: -2
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-2
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-2
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132010.14928869778 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Calculating Defect Formation Energy from VAC_1
+
+LOG | Epsilon value cannot be fetched from materials project.
+
+LOG | Epsilon manually set to 5.829713979999983.
+Defect Loc: [0.06250150404071654, 0.1874984960174294, 0.06250150404071654]
+supercell_dimensions: [14.2892127 14.2892127 14.2892127]
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+
+LOG | Calculating DFE for VAC_1, charge = 0
+{0: -132040.6184472268, 1: -132054.84760524036, -1: -132025.74994752338, 2: -132068.57087855373, -2: -132010.14928869778}
+
+LOG | Calculating DFE for VAC_1, charge = 1
+{0: -132040.6184472268, 1: -132054.84760524036, -1: -132025.74994752338, 2: -132068.57087855373, -2: -132010.14928869778}
+1
+/trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/1/
+
+LOG | No manual sigma provided for charge 1
+
+LOG | Sigma: 1.216146
+
+LOG | Accepted sigma: 1.216146 bohr
+made the input
+
+LOG | Coffee.py energy: 0.8397 eV
+made the input
+
+LOG | Coffee.py energy: 0.8877 eV
+made the input
+
+LOG | Coffee.py energy: 0.9199 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[0.8397, 0.8877, 0.9199]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 1.0823270270270287
+E_lattice = 0.24262702702702865
+Calculating potential alignment correction
+dV_0p.py output: charge: 1
+Shape of the data in the file: (180, 180, 180)
+
+Defect Coords: 0.8930972856
+Farthest coordinate from defect: 7.9980972856
+dV0p @ far from defect = -0.053963015909582496
+
+LOG | dV0p @ far from defect = -0.053963015909582496
+dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (180, 180, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = 0.05966513896060835
+dVmD_vdiff @ far from defect = 0.069632898583055
+
+LOG | dVmD_vdiff @ far from defect = 0.069632898583055
+
+
+LOG | #################################################
+
+LOG | Charge: 1
+
+LOG | total_FNV_correction: 0.19863177073989283
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.24262702702702865, 'E_vq0m': 0.009967759622446656, 'E_vop': -0.053963015909582496, 'total': 0.19863177073989283}
+
+LOG | Calculating DFE for VAC_1, charge = -1
+{0: -132040.6184472268, 1: -132054.84760524036, -1: -132025.74994752338, 2: -132068.57087855373, -2: -132010.14928869778}
+-1
+/trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-1/
+
+LOG | No manual sigma provided for charge -1
+
+LOG | Sigma: 0.910729
+
+LOG | Accepted sigma: 0.910729 bohr
+made the input
+
+LOG | Coffee.py energy: 1.2018 eV
+made the input
+
+LOG | Coffee.py energy: 1.2503 eV
+made the input
+
+LOG | Coffee.py energy: 1.2827 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[1.2018, 1.2503, 1.2827]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 1.445175675675676
+E_lattice = 0.24337567567567597
+Calculating potential alignment correction
+dV_0p.py output: charge: -1
+Shape of the data in the file: (180, 180, 180)
+
+Defect Coords: 0.8930972856
+Farthest coordinate from defect: 7.9980972856
+dV0p @ far from defect = 0.053963015909582496
+
+LOG | dV0p @ far from defect = 0.053963015909582496
+dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (180, 180, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = -0.05995183134133818
+dVmD_vdiff @ far from defect = -0.0779335201318154
+
+LOG | dVmD_vdiff @ far from defect = -0.0779335201318154
+
+
+LOG | #################################################
+
+LOG | Charge: -1
+
+LOG | total_FNV_correction: 0.27935700279478126
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.24337567567567597, 'E_vq0m': -0.01798168879047722, 'E_vop': 0.053963015909582496, 'total': 0.27935700279478126}
+
+LOG | Calculating DFE for VAC_1, charge = 2
+{0: -132040.6184472268, 1: -132054.84760524036, -1: -132025.74994752338, 2: -132068.57087855373, -2: -132010.14928869778}
+2
+/trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/2/
+
+LOG | No manual sigma provided for charge 2
+
+LOG | Sigma: 1.308559
+
+LOG | Accepted sigma: 1.308559 bohr
+made the input
+
+LOG | Coffee.py energy: 3.0543 eV
+made the input
+
+LOG | Coffee.py energy: 3.2455 eV
+made the input
+
+LOG | Coffee.py energy: 3.3741 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[3.0543, 3.2455, 3.3741]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 4.025186486486491
+E_lattice = 0.9708864864864908
+Calculating potential alignment correction
+dV_0p.py output: charge: 2
+Shape of the data in the file: (180, 180, 180)
+
+Defect Coords: 0.8930972856
+Farthest coordinate from defect: 7.9980972856
+dV0p @ far from defect = -0.10792603181916499
+
+LOG | dV0p @ far from defect = -0.10792603181916499
+dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (180, 180, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = 0.11912432030194652
+dVmD_vdiff @ far from defect = 0.124083724649292
+
+LOG | dVmD_vdiff @ far from defect = 0.124083724649292
+
+
+LOG | #################################################
+
+LOG | Charge: 2
+
+LOG | total_FNV_correction: 0.8679198590146713
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.9708864864864908, 'E_vq0m': 0.004959404347345486, 'E_vop': -0.10792603181916499, 'total': 0.8679198590146713}
+
+LOG | Calculating DFE for VAC_1, charge = -2
+{0: -132040.6184472268, 1: -132054.84760524036, -1: -132025.74994752338, 2: -132068.57087855373, -2: -132010.14928869778}
+-2
+/trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-2/
+
+LOG | No manual sigma provided for charge -2
+
+LOG | Sigma: 1.147027
+
+LOG | Accepted sigma: 1.147027 bohr
+made the input
+
+LOG | Coffee.py energy: 3.6187 eV
+made the input
+
+LOG | Coffee.py energy: 3.8111 eV
+made the input
+
+LOG | Coffee.py energy: 3.9402 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[3.6187, 3.8111, 3.9402]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 4.591645945945953
+E_lattice = 0.9729459459459533
+Calculating potential alignment correction
+dV_0p.py output: charge: -2
+Shape of the data in the file: (180, 180, 180)
+
+Defect Coords: 0.8930972856
+Farthest coordinate from defect: 7.9980972856
+dV0p @ far from defect = 0.10792603181916499
+
+LOG | dV0p @ far from defect = 0.10792603181916499
+dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (180, 180, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = -0.11947445792121669
+dVmD_vdiff @ far from defect = -0.15801408829599659
+
+LOG | dVmD_vdiff @ far from defect = -0.15801408829599659
+
+
+LOG | #################################################
+
+LOG | Charge: -2
+
+LOG | total_FNV_correction: 1.0423323473903383
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.9729459459459533, 'E_vq0m': -0.03853963037477989, 'E_vop': 0.10792603181916499, 'total': 1.0423323473903383}

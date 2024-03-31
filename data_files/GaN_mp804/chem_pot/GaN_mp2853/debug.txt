@@ -1,0 +1,33 @@
+##################################################################
+Log of Defect Tracking Run
+Date and time: 2024-02-21 08:46:45.009632
+##################################################################
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+LOG | Calculate Pristine Energy
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+LOG | Searching for espresso.pwo
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp2853/supercells/PRISTINE_0/0/unitcell
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -16991.24168043662 eV!
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_supercell_output_found: False
+LOG | valid_wfc_files_found: True
+LOG | valid_cube_files_found: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_cube_gen: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[4.30331424 0.         0.        ]
+ [0.         4.30331424 0.        ]
+ [0.         0.         4.30331424]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | DFT Calculation of Pristine Supercell: True

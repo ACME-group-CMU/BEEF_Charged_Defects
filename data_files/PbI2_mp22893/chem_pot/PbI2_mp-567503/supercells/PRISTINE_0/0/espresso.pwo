@@ -1,0 +1,3019 @@
+
+     Program PWSCF v.7.1 starts on 20Feb2024 at 16:51:58 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     128 processor cores
+     Number of MPI processes:               128
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     1952053 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from espresso.pwi
+Warning: card &CELL ignored
+Warning: card    CELL_DYNAMICS    = 'BFGS' ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Pb.pbe-dn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  6S 6P 5D renormalized
+     file I.pbe-dn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S 5P renormalized
+
+     **************************************************************************
+     Initializing libbeef V0.1.2 with the BEEF-vdW functional.
+     Citation: Wellendorff et al., PRB 85, 235149 (2012).
+     **************************************************************************
+
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= BEEF-VDW
+                           (   1   4  43  14   2   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     K-points division:     npool     =       2
+     R & G space division:  proc/nbgrp/npool/nimage =      64
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          30      23      6                 3312     2367     336
+     Max          31      24      7                 3338     2398     351
+     Sum        1921    1531    421               213179   152711   22027
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       8.9202  a.u.
+     unit-cell volume          =    1928.4816 (a.u.)^3
+     number of atoms/cell      =            6
+     number of atomic types    =            2
+     number of electrons       =        96.00
+     number of Kohn-Sham states=           58
+     kinetic-energy cutoff     =      70.0000  Ry
+     charge density cutoff     =     350.0000  Ry
+     scf convergence threshold =      1.0E-07
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= BEEF-VDW
+                           (   1   4  43  14   2   0   0)
+
+     celldm(1)=   8.920157  celldm(2)=   0.000000  celldm(3)=   3.137382
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   3.137382 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.318737 )  
+
+
+     PseudoPot. # 1 for Pb read from file:
+     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 39ab5b8a6bbd56b7735ad9f188aac93a
+     Pseudo is Projector augmented-wave + core cor, Zval = 14.0
+     Generated using 'atomic' code by A. Dal Corso  v.7.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1281 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for I  read from file:
+     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: bfa8781bc1224d19af3f3980e3fab11e
+     Pseudo is Projector augmented-wave + core cor, Zval = 17.0
+     Generated using 'atomic' code by A. Dal Corso  v.7.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1247 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Pb            14.00   207.20000     Pb( 1.00)
+        I             17.00   126.90447     I ( 1.00)
+
+     12 Sym. Ops. (no inversion) found ( 6 have fractional translation)
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     180 deg rotation - cart. axis [0,0,1]        
+
+ cryst.   s( 2) = (    -1          0          0      )    f =( -0.0000001 )
+                  (     0         -1          0      )       ( -0.0000001 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s( 2) = ( -1.0000000  0.0000000  0.0000000 )    f =(  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )       ( -0.0000001 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym =  3      60 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 3) = (     1          1          0      )    f =( -0.0000011 )
+                  (    -1          0          0      )       ( -0.0000000 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s( 3) = (  0.5000000 -0.8660254  0.0000000 )    f =( -0.0000011 )
+                  (  0.8660254  0.5000000  0.0000000 )       ( -0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym =  4      60 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 4) = (     0         -1          0      )    f =(  0.0000001 )
+                  (     1          1          0      )       (  0.0000010 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s( 4) = (  0.5000000  0.8660254  0.0000000 )    f =( -0.0000004 )
+                  ( -0.8660254  0.5000000  0.0000000 )       (  0.0000009 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym =  5     120 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 5) = (     0          1          0      )
+                  (    -1         -1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 5) = ( -0.5000000 -0.8660254  0.0000000 )
+                  (  0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  6     120 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 6) = (    -1         -1          0      )
+                  (     1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s( 6) = ( -0.5000000  0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  7     inv. 180 deg rotation - cart. axis [0,1,0]   
+
+ cryst.   s( 7) = (     1          0          0      )    f =( -0.0000011 )
+                  (    -1         -1          0      )       ( -0.0000001 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s( 7) = (  1.0000000  0.0000000  0.0000000 )    f =( -0.0000010 )
+                  (  0.0000000 -1.0000000  0.0000000 )       ( -0.0000001 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym =  8     inv. 180 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s( 8) = (    -1          0          0      )
+                  (     1          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 8) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  9     inv. 180 deg rotation - cryst. axis [1,-1,0] 
+
+ cryst.   s( 9) = (     0          1          0      )    f =(  0.0000001 )
+                  (     1          0          0      )       ( -0.0000000 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s( 9) = ( -0.5000000  0.8660254  0.0000000 )    f =(  0.0000001 )
+                  (  0.8660254  0.5000000  0.0000000 )       ( -0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym = 10     inv. 180 deg rotation - cryst. axis [2,1,0]  
+
+ cryst.   s(10) = (    -1         -1          0      )    f =( -0.0000001 )
+                  (     0          1          0      )       (  0.0000010 )
+                  (     0          0          1      )       (  0.5000000 )
+
+ cart.    s(10) = ( -0.5000000 -0.8660254  0.0000000 )    f =( -0.0000006 )
+                  ( -0.8660254  0.5000000  0.0000000 )       (  0.0000009 )
+                  (  0.0000000  0.0000000  1.0000000 )       (  1.5686910 )
+
+
+      isym = 11     inv. 180 deg rotation - cryst. axis [0,1,0]  
+
+ cryst.   s(11) = (     1          1          0      )
+                  (     0         -1          0      )
+                  (     0          0          1      )
+
+ cart.    s(11) = (  0.5000000  0.8660254  0.0000000 )
+                  (  0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym = 12     inv. 180 deg rotation - cryst. axis [1,1,0]  
+
+ cryst.   s(12) = (     0         -1          0      )
+                  (    -1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s(12) = (  0.5000000 -0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group C_6v (6mm) 
+     there are  6 classes
+     the character table:
+
+       E     2C6   2C3   C2    3s_v  3s_d 
+A_1    1.00  1.00  1.00  1.00  1.00  1.00
+A_2    1.00  1.00  1.00  1.00 -1.00 -1.00
+B_1    1.00 -1.00  1.00 -1.00  1.00 -1.00
+B_2    1.00 -1.00  1.00 -1.00 -1.00  1.00
+E_1    2.00  1.00 -1.00 -2.00  0.00  0.00
+E_2    2.00 -1.00 -1.00  2.00  0.00  0.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+     2C6      3    4
+           60 deg rotation - cryst. axis [0,0,1]                 
+     2C3      5    6
+          120 deg rotation - cryst. axis [0,0,1]                 
+     C2       2
+          180 deg rotation - cart. axis [0,0,1]                  
+     3s_v     8   12   11
+          inv. 180 deg rotation - cart. axis [1,0,0]             
+     3s_d     7    9   10
+          inv. 180 deg rotation - cart. axis [0,1,0]             
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Pb  tau(   1) = (   0.5000005   0.2886749   1.5685072  )
+         2           Pb  tau(   2) = (  -0.0000005   0.5773506   3.1371982  )
+         3           I   tau(   3) = (   0.5000005   0.2886749   2.7388111  )
+         4           I   tau(   4) = (   0.0000000   0.0000000   0.3987577  )
+         5           I   tau(   5) = (   0.0000000   0.0000000   1.9674487  )
+         6           I   tau(   6) = (  -0.0000005   0.5773506   1.1701201  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Pb  tau(   1) = (  0.6666670  0.3333330  0.4999414  )
+         2           Pb  tau(   2) = (  0.3333330  0.6666671  0.9999414  )
+         3           I   tau(   3) = (  0.6666670  0.3333330  0.8729607  )
+         4           I   tau(   4) = (  0.0000000  0.0000000  0.1270989  )
+         5           I   tau(   5) = (  0.0000000  0.0000000  0.6270989  )
+         6           I   tau(   6) = (  0.3333330  0.6666671  0.3729607  )
+
+     number of k points=     4  Gaussian smearing, width (Ry)=  0.0100
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.1250000
+        k(    2) = (   0.0000000   0.2886751   0.0000000), wk =   0.7500000
+        k(    3) = (   0.0000000  -0.5773503   0.0000000), wk =   0.3750000
+        k(    4) = (   0.2500000   0.4330127   0.0000000), wk =   0.7500000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.1250000
+        k(    2) = (   0.0000000   0.2500000   0.0000000), wk =   0.7500000
+        k(    3) = (   0.0000000  -0.5000000   0.0000000), wk =   0.3750000
+        k(    4) = (   0.2500000   0.2500000   0.0000000), wk =   0.7500000
+
+     Dense  grid:   213179 G-vectors     FFT dimensions: (  54,  54, 180)
+
+     Smooth grid:   152711 G-vectors     FFT dimensions: (  48,  48, 150)
+
+     Dynamical RAM for                 wfc:       0.26 MB
+
+     Dynamical RAM for     wfc (w. buffer):       0.79 MB
+
+     Dynamical RAM for           str. fact:       0.10 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       0.49 MB
+
+     Dynamical RAM for                qrad:       3.00 MB
+
+     Dynamical RAM for          rho,v,vnew:       0.35 MB
+
+     Dynamical RAM for               rhoin:       0.12 MB
+
+     Dynamical RAM for            rho*nmix:       0.81 MB
+
+     Dynamical RAM for           G-vectors:       0.21 MB
+
+     Dynamical RAM for          h,s,v(r/c):       2.46 MB
+
+     Dynamical RAM for          <psi|beta>:       0.10 MB
+
+     Dynamical RAM for                 psi:       1.05 MB
+
+     Dynamical RAM for                hpsi:       1.05 MB
+
+     Dynamical RAM for                spsi:       1.05 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       0.60 MB
+
+     Dynamical RAM for           addusdens:       4.86 MB
+
+     Dynamical RAM for          addusforce:       5.03 MB
+
+     Dynamical RAM for         addusstress:       5.13 MB
+
+     Estimated static dynamical RAM per process >       5.55 MB
+
+     Estimated max dynamical RAM per process >      12.09 MB
+
+     Estimated total dynamical RAM >       1.46 GB
+
+     Atomic positions and unit cell read from directory:
+     ./PbI2.save/
+ 
+
+     Check: negative core charge=   -0.000001
+
+     The initial density is read from file :
+     ./PbI2.save/charge-density
+
+
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     % You are using vdW-DF, which was implemented by the Thonhauser group. %
+     % Please cite the following two papers that made this development      %
+     % possible and the two reviews that describe the various versions:     %
+     %                                                                      %
+     %   T. Thonhauser et al., PRL 115, 136402 (2015).                      %
+     %   T. Thonhauser et al., PRB 76, 125112 (2007).                       %
+     %   K. Berland et al., Rep. Prog. Phys. 78, 066501 (2015).             %
+     %   D.C. Langreth et al., J. Phys.: Condens. Matter 21, 084203 (2009). %
+     %                                                                      %
+     % If you are calculating stress with vdW-DF, please also cite:         %
+     %                                                                      %
+     %   R. Sabatini et al., J. Phys.: Condens. Matter 24, 424209 (2012).   %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     %  vdW-DF NEWS:                                                        %
+     %                                                                      %
+     %  * vdW-DF3 is now available. DOI: 10.1021/acs.jctc.0c00471           %
+     %    use with input_dft = 'vdW-DF3-opt1' or 'vdW-DF3-opt2'             %
+     %                                                                      %
+     %  * Unscreened and range-separated vdW-DF hybrid functionals          %
+     %    DOI: 10.1063/1.4986522 and 10.1088/1361-648X/ac2ad2               %
+     %    use with input_dft = 'vdW-DF-cx0' (etc) and 'vdW-DF-ahcx'         %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+     Carrying out vdW-DF run using the following parameters:
+     Nqs    =  20  Npoints =  1024  r_max =  100.000
+     q_mesh =  0.00001000  0.04494208  0.09755937  0.15916263
+               0.23128650  0.31572767  0.41458969  0.53033537
+               0.66584808  0.82450364  1.01025438  1.22772762
+               1.48234092  1.78043706  2.12944203  2.53805004
+               3.01644009  3.57652955  4.23227104  5.00000000
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805468 Ry
+     -----------------------------------------------
+
+     Starting wfcs from file
+     Checking if some PAW data can be deallocated... 
+       PAW data deallocated on   84 nodes for type:  1
+       PAW data deallocated on   44 nodes for type:  2
+
+     total cpu time spent up to now is        2.6 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    70.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           174 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+       1946861 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.00E-05,  avg # of iterations =  1.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           182 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+       1946835 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.22E-11,  avg # of iterations = 12.3
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+     total cpu time spent up to now is        5.0 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 19029 PWs)   bands (ev):
+
+   -40.8452 -40.8452 -40.8452 -40.8452 -40.8441 -40.8441 -40.8440 -40.8440
+   -40.8436 -40.8436 -40.8368 -40.8368 -40.8368 -40.8368 -40.8362 -40.8362
+   -40.8362 -40.8362 -40.8361 -40.8361 -13.0031 -13.0031 -13.0031 -13.0031
+   -13.0013 -13.0012 -12.9945 -12.9945 -12.9945 -12.9945  -8.1696  -8.0855
+    -7.7559  -7.6473  -3.2568  -3.1866   2.1520   2.5756   2.6105   2.6106
+     2.6919   2.6919   2.8101   2.8101   2.9040   2.9040   2.9259   3.3789
+     5.8547   6.0339   6.7378   6.7378   6.7889   6.7889   9.7038  10.3535
+    11.1619  11.2539
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000
+
+          k = 0.0000 0.2887 0.0000 ( 19047 PWs)   bands (ev):
+
+   -40.8452 -40.8452 -40.8452 -40.8452 -40.8441 -40.8441 -40.8441 -40.8440
+   -40.8436 -40.8436 -40.8368 -40.8368 -40.8368 -40.8368 -40.8362 -40.8362
+   -40.8362 -40.8362 -40.8361 -40.8361 -13.0133 -13.0133 -13.0005 -13.0004
+   -12.9988 -12.9988 -12.9950 -12.9950 -12.9917 -12.9917  -7.9701  -7.9001
+    -7.6584  -7.5759  -3.4475  -3.4326   1.4028   1.6190   2.0068   2.1452
+     2.2535   2.2727   2.3617   2.7873   2.9442   2.9523   3.1231   3.3225
+     6.3142   6.6685   7.0807   7.1948   7.2401   7.3369   9.7740  10.0560
+    10.4325  10.7603
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000
+
+          k = 0.0000-0.5774 0.0000 ( 19116 PWs)   bands (ev):
+
+   -40.8452 -40.8452 -40.8451 -40.8451 -40.8441 -40.8441 -40.8441 -40.8440
+   -40.8436 -40.8435 -40.8368 -40.8368 -40.8367 -40.8367 -40.8362 -40.8362
+   -40.8362 -40.8362 -40.8361 -40.8360 -13.0241 -13.0241 -13.0004 -13.0004
+   -12.9998 -12.9998 -12.9915 -12.9915 -12.9864 -12.9864  -7.6888  -7.6553
+    -7.5909  -7.5563  -3.7134  -3.7105   0.8651   0.9713   1.7712   1.8362
+     1.8988   1.9541   2.6027   2.6872   2.7467   2.8146   2.8832   2.9638
+     6.5286   6.7915   7.2449   7.4839   7.5453   7.7132   9.2930   9.5839
+    11.1669  11.3086
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000
+
+          k = 0.2500 0.4330 0.0000 ( 19112 PWs)   bands (ev):
+
+   -40.8452 -40.8452 -40.8452 -40.8451 -40.8441 -40.8441 -40.8441 -40.8440
+   -40.8436 -40.8435 -40.8368 -40.8368 -40.8368 -40.8367 -40.8362 -40.8362
+   -40.8362 -40.8362 -40.8361 -40.8360 -13.0174 -13.0174 -13.0059 -13.0058
+   -12.9953 -12.9953 -12.9949 -12.9949 -12.9888 -12.9887  -7.7077  -7.6716
+    -7.5743  -7.5379  -3.7048  -3.6967   1.1248   1.3094   1.3517   1.3619
+     1.8182   1.9277   2.2841   2.6485   2.7426   2.7762   3.1694   3.3447
+     6.9446   7.1636   7.2797   7.3505   7.5606   7.6204  10.2274  10.2519
+    10.5265  10.7269
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000
+
+     the Fermi energy is     4.0949 ev
+
+!    total energy              =   -4047.26567138 Ry
+     total all-electron energy =   -140560.646556 Ry
+     estimated scf accuracy    <       0.00000006 Ry
+     smearing contrib. (-TS)   =      -0.00000000 Ry
+     internal energy E=F+TS    =   -4047.26567138 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -751.40898507 Ry
+     hartree contribution      =     419.24569710 Ry
+     xc contribution           =    -283.53485014 Ry
+     ewald contribution        =    -614.65435328 Ry
+     one-center paw contrib.   =   -2816.91318000 Ry
+      -> PAW hartree energy AE =      95.89515853 Ry
+      -> PAW hartree energy PS =     -96.13173670 Ry
+      -> PAW xc energy AE      =    -798.42950651 Ry
+      -> PAW xc energy PS      =      33.30941627 Ry
+      -> total E_H with PAW    =     419.00911893 Ry
+      -> total E_XC with PAW   =   -1048.65494038 Ry
+
+     convergence has been achieved in   1 iterations
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00000000   -0.00000000    0.00004182
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00004182
+     atom    3 type  2   force =    -0.00000000   -0.00000000    0.00057391
+     atom    4 type  2   force =     0.00000000    0.00000000   -0.00061573
+     atom    5 type  2   force =     0.00000000    0.00000000   -0.00061573
+     atom    6 type  2   force =     0.00000000    0.00000000    0.00057391
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     0.00000000   -0.00000000   -0.00042947
+     atom    2 type  1   force =    -0.00000000    0.00000000   -0.00042947
+     atom    3 type  2   force =     0.00000000   -0.00000000    0.24530654
+     atom    4 type  2   force =     0.00000000    0.00000000   -0.24555300
+     atom    5 type  2   force =     0.00000000   -0.00000000   -0.24555300
+     atom    6 type  2   force =     0.00000000    0.00000000    0.24530654
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -0.00002824    0.00001637   -0.07031551
+     atom    2 type  1   force =     0.00002830   -0.00001828   -0.07031481
+     atom    3 type  2   force =    -0.00002069    0.00001249  -14.55857647
+     atom    4 type  2   force =    -0.00000954    0.00000697   14.62889196
+     atom    5 type  2   force =     0.00000947   -0.00000468   14.62889289
+     atom    6 type  2   force =     0.00002070   -0.00001287  -14.55857805
+     The local contribution  to forces
+     atom    1 type  1   force =    -0.00012221    0.00006266    0.07064365
+     atom    2 type  1   force =     0.00036799   -0.00023771    0.07060821
+     atom    3 type  2   force =    -0.00034951    0.00017921   14.31849108
+     atom    4 type  2   force =     0.00034945   -0.00017918  -14.38886269
+     atom    5 type  2   force =     0.00034945   -0.00017918  -14.38883541
+     atom    6 type  2   force =     0.00105240   -0.00067982   14.31849796
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.00000822    0.00000422   -0.00002502
+     atom    2 type  1   force =     0.00002476   -0.00001600   -0.00002500
+     atom    3 type  2   force =    -0.00002879    0.00001476   -0.00518848
+     atom    4 type  2   force =     0.00002877   -0.00001475    0.00520385
+     atom    5 type  2   force =     0.00002877   -0.00001475    0.00520489
+     atom    6 type  2   force =     0.00008664   -0.00005597   -0.00518941
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    4 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    5 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    6 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00000000   -0.00000000    0.00024436
+     atom    2 type  1   force =    -0.00000000    0.00000000    0.00024436
+     atom    3 type  2   force =     0.00000000   -0.00000000    0.00059788
+     atom    4 type  2   force =     0.00000000   -0.00000000   -0.00025166
+     atom    5 type  2   force =     0.00000000   -0.00000000   -0.00025166
+     atom    6 type  2   force =    -0.00000001    0.00000001    0.00059788
+
+     Total force =     0.001192     Total SCF correction =     0.000980
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=        0.93
+   0.00000469  -0.00000000   0.00000000            0.69       -0.00        0.00
+  -0.00000000   0.00000469  -0.00000000           -0.00        0.69       -0.00
+   0.00000000   0.00000000   0.00000950            0.00        0.00        1.40
+
+     kinetic stress (kbar)  14878.25     -0.00      0.00
+                               -0.00  14878.25      0.00
+                                0.00      0.00  14890.13
+
+     local   stress (kbar)  -7696.87     -0.00      0.00
+                               -0.00  -7696.87     -0.00
+                                0.00     -0.00   1599.07
+
+     nonloc. stress (kbar)  -1064.55      0.00      0.00
+                                0.00  -1064.55     -0.00
+                                0.00     -0.00  -1070.12
+
+     hartree stress (kbar)  12058.06     -0.00      0.00
+                               -0.00  12058.06     -0.00
+                                0.00     -0.00   7864.05
+
+     exc-cor stress (kbar)   6894.63      0.00     -0.00
+                                0.00   6894.63      0.00
+                               -0.00      0.00   6893.44
+
+     corecor stress (kbar) -11225.42     -0.00      0.00
+                               -0.00 -11225.42      0.00
+                                0.00      0.00 -11225.40
+
+     ewald   stress (kbar) -13926.10      0.01     -0.00
+                                0.01 -13926.09      0.00
+                               -0.00      0.00 -19033.81
+
+     hubbard stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+     DFT-D   stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+     XDM     stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+     dft-nl  stress (kbar)     82.68     -0.00      0.00
+                               -0.00     82.68     -0.00
+                                0.00     -0.00     84.04
+
+     TS-vdW  stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+     MDB     stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+     3D-RISM stress (kbar)      0.00      0.00      0.00
+                                0.00      0.00      0.00
+                                0.00      0.00      0.00
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+
+
+     -----------------------------------------------
+     Non-local corr. energy    =       2.87805266 Ry
+     -----------------------------------------------
+
+ BEEFens 2000 ensemble energies
+             -0.241771170767511E+01
+             -0.243293822362299E+02
+             -0.110705889883616E+02
+              0.849621759365645E+01
+             -0.185942293478886E+02
+             -0.227659961912632E+02
+              0.116851109256673E+02
+              0.497373560735497E-01
+              0.196933900905404E+02
+             -0.124709303177366E+01
+              0.100848523475303E+02
+              0.102865852018935E+01
+             -0.771962043404969E+00
+             -0.623947740263063E+00
+              0.125676807904582E+02
+             -0.946525481566648E+01
+             -0.185802900363526E+02
+             -0.599767374756870E+01
+              0.537203078497394E+01
+             -0.114655822989761E+00
+              0.273971707487560E+02
+              0.228684873578540E+02
+             -0.140852149434241E+02
+              0.486843376891183E+01
+             -0.293463548409718E+02
+              0.240886061030053E+02
+              0.823782404571256E+01
+              0.217507938957140E+02
+              0.146593471887799E+02
+             -0.680622639275015E+01
+              0.536379513321731E+01
+             -0.959048239553683E+01
+              0.400650422316978E+01
+              0.145852450652933E+02
+              0.156937817039640E+02
+             -0.682212879441380E+01
+              0.346212366095966E+02
+             -0.139319481337234E+02
+             -0.928094008581634E+01
+              0.138481631291158E+02
+              0.610693649824904E+01
+              0.105212106455574E+02
+             -0.203229365434803E+02
+             -0.132201118644926E+01
+              0.194969606633735E+02
+              0.254838467344653E+02
+             -0.258754936344514E+02
+              0.166056589036631E+01
+              0.897629999937456E+01
+              0.579508982183097E+01
+              0.101180187667226E+02
+              0.222184108956612E+02
+             -0.144298032113515E+02
+             -0.140031621248918E+02
+             -0.195082194528839E+02
+             -0.282879937343431E+01
+             -0.166438359137635E+02
+              0.214955565749592E+01
+             -0.240051896910126E+01
+             -0.132023353152074E+02
+              0.215464420834558E+02
+              0.218591065736139E+02
+             -0.601067572331561E+01
+             -0.164969247103073E+02
+             -0.100165682812056E+02
+             -0.649378691963305E+00
+              0.158904316562757E+02
+             -0.223043573174826E+01
+             -0.158739486071560E+02
+              0.146590223154692E+02
+             -0.272195025030732E+02
+              0.240799879193631E+02
+             -0.278749608815896E+02
+             -0.122196778602763E+02
+             -0.400047351994009E+01
+             -0.254748992407767E+01
+              0.145466837964034E+01
+              0.192547505221727E+02
+              0.120967467173479E+02
+             -0.202724825645270E+02
+             -0.269184019789790E+02
+             -0.140417573296421E+02
+             -0.104229546738944E+02
+              0.158133353752015E+01
+             -0.332761285661616E+01
+             -0.976458178470281E+01
+              0.119242683951344E+02
+             -0.102289912410694E+02
+              0.397495123212208E+02
+             -0.182383422737230E+02
+              0.397830568730910E+01
+              0.416283500585601E+01
+              0.596141033865750E+01
+              0.137971175982317E+02
+              0.984435930747552E+01
+              0.934457916658101E+01
+             -0.153407015131572E+02
+              0.908991146112690E+01
+              0.223071712600671E+01
+             -0.295437904118046E+00
+              0.180026033852604E+02
+             -0.212708767367429E+02
+              0.360029137171131E+02
+             -0.846564312228170E+01
+             -0.384110955895531E+02
+              0.211516462928937E+01
+              0.351643713221759E+01
+             -0.105330702094064E+02
+             -0.202087963420357E+02
+             -0.101558844441403E+02
+             -0.749179387076483E+01
+              0.258280000603833E+00
+             -0.159424650436432E+02
+              0.867310895891734E+00
+              0.172775902891452E+01
+              0.367921244530807E+01
+              0.346451727609528E+02
+              0.411511734599212E+01
+             -0.210197461776737E+02
+             -0.157717721324015E+02
+             -0.496252387390213E+01
+             -0.136447266455617E+02
+              0.231851751873155E+02
+             -0.147249979192309E+02
+              0.700524160859295E+00
+             -0.293182705861445E+01
+              0.382814772051802E+01
+              0.136680258360475E+02
+             -0.148687352521292E+02
+             -0.292674299865776E+02
+             -0.532634512916859E+01
+             -0.611225047944298E+01
+             -0.438968177336076E+01
+              0.148131049931673E+02
+             -0.257023581983271E+02
+             -0.290589588808060E+02
+             -0.379458565816977E+01
+             -0.634831603236375E+01
+             -0.104658999801907E+01
+              0.795896430444677E+01
+              0.175631335723753E+02
+              0.890565028748735E+01
+             -0.866943941179800E+01
+             -0.918493786565945E+01
+             -0.265798559811705E+02
+             -0.199467657150453E+01
+             -0.126427517220291E+02
+             -0.792621197772087E+01
+              0.220581505190785E+02
+             -0.170190128897968E+02
+             -0.580446586083792E+01
+              0.205247189448664E+02
+             -0.280434521828167E+01
+             -0.534153974729466E+01
+              0.348828531036241E+01
+              0.815754706845024E+01
+             -0.131610524723154E+02
+              0.769871210423196E+01
+              0.513872389717309E+01
+              0.120717948030705E+02
+             -0.124442679038933E+02
+             -0.101321523814350E+02
+              0.153954333594196E+02
+             -0.128346837024063E+01
+             -0.602925073901849E+01
+             -0.524387460929904E+01
+             -0.726941738632045E+01
+             -0.977859214044151E+01
+             -0.229747759849561E+02
+             -0.290278993220158E+02
+             -0.913254165927921E+01
+             -0.905201115202397E+01
+             -0.105967401139227E+02
+             -0.176965170992815E+02
+             -0.914586294897501E+01
+              0.157329463914966E+02
+              0.679761188102657E+01
+              0.222992590058312E+02
+             -0.949437509975303E+01
+              0.763426762474396E+01
+              0.413202457411022E+01
+             -0.234850232269075E+02
+             -0.558147259428329E+01
+              0.125778473703074E+02
+             -0.377418636386273E+02
+              0.818808421237173E+01
+              0.632909952500952E+01
+              0.240644188466910E+02
+             -0.742545208805183E+01
+              0.207917767880524E+02
+              0.318201388756865E+02
+              0.263965731634286E+02
+             -0.148705084405942E+02
+             -0.809436677259518E+01
+             -0.454583779037267E+01
+              0.105685072866195E+02
+              0.540816651112674E+01
+             -0.571409633451333E+01
+              0.154067850198036E+02
+              0.306743607294763E+02
+             -0.107184216752825E+02
+             -0.754748536385462E+01
+              0.508111210889159E+01
+             -0.174377334722172E+02
+             -0.150222666711128E+02
+              0.133389822822416E+01
+              0.444641664539603E+00
+             -0.280843629863358E+01
+              0.263072451914307E+02
+              0.831206755080467E+01
+             -0.436788148478114E+01
+             -0.170357265500263E+01
+             -0.346020685578307E+02
+             -0.370945075761745E+01
+             -0.789211401448526E+01
+             -0.952108017075631E+00
+              0.172102531208344E+02
+             -0.915596392483138E+00
+              0.240040049967072E+02
+             -0.155218554845296E+02
+             -0.156853886438651E+02
+              0.158364087824243E+02
+              0.208668541055666E+02
+              0.277330597192419E+02
+             -0.158169510727816E+02
+             -0.886653296146082E+01
+              0.164940938727983E+02
+              0.181979913159275E+02
+             -0.204012144504725E+02
+             -0.518182973550671E+01
+              0.218931539352987E+02
+              0.141951274416227E+02
+              0.855063109371892E+01
+              0.787924273724864E+01
+             -0.566868989014466E+01
+             -0.124436451973293E+01
+              0.912942889296005E+01
+             -0.958063017245246E+01
+             -0.121536151913728E+02
+              0.292566257842600E+01
+             -0.559714595237597E+01
+              0.826977619172699E+01
+             -0.141189475781090E+02
+              0.169616252443644E+02
+             -0.248260891700541E+01
+              0.166619497149921E+02
+             -0.609457223553142E+01
+             -0.205037880597831E+02
+             -0.206572857122012E+00
+              0.537911378026517E+01
+              0.451040313543541E+01
+              0.199404744818564E+01
+              0.238865889019553E+01
+              0.389409601104709E+01
+              0.312697039413767E+02
+             -0.230511875747884E+02
+              0.512205111329960E+01
+             -0.122053526564092E+01
+              0.531498521035331E+00
+              0.124990855432994E+02
+              0.909966219057949E+01
+             -0.947467959141521E+01
+              0.273023580857640E+01
+             -0.159422113309258E+02
+             -0.521419935971721E+01
+             -0.343831174990498E+00
+             -0.345462079702433E+02
+              0.830032248278232E+01
+              0.169554118952543E+02
+              0.861336671229452E+01
+              0.125179557304552E+02
+             -0.744605424852696E+01
+              0.726616173028098E+01
+              0.185974614880044E+02
+             -0.142349051150871E+02
+              0.836685342264795E+01
+              0.232148681218534E+02
+             -0.319309481350687E+01
+              0.147715724385148E+02
+             -0.452774229852707E+01
+             -0.625896728541565E+01
+             -0.141827335342640E+01
+             -0.162124586274865E+02
+              0.942347076963274E+01
+              0.884437062512143E+01
+              0.173079591787393E+02
+             -0.951802347253597E+01
+              0.154133899098577E+02
+              0.308240518214945E+02
+              0.165728606392708E+02
+             -0.140860787526905E+02
+             -0.544153481569469E+01
+             -0.269793916902889E+02
+              0.255429530092111E+01
+              0.365663030751193E+01
+             -0.852773680468097E+00
+             -0.530466310885498E+01
+              0.403753646076494E+01
+              0.194440303318993E+02
+             -0.226445615942907E+00
+              0.897654636429126E+01
+              0.874918279220140E+01
+             -0.433127061736360E+01
+             -0.279340994002980E+02
+              0.103148458214162E+02
+             -0.188739923076060E+00
+              0.145239420069056E+02
+             -0.389351330166895E+01
+             -0.533579360460226E+01
+             -0.630928259895424E+01
+              0.406616737024523E+01
+              0.126325819044871E+01
+              0.727550236487312E+01
+              0.752087768390152E+01
+             -0.202362163888683E+02
+              0.109537762228057E+02
+              0.132441459975108E+02
+              0.107236591745404E+02
+              0.207103046268422E+02
+              0.832716644645624E+01
+              0.239766116513727E+02
+             -0.719350062560372E+01
+             -0.810343740840656E+01
+              0.117672235758540E+02
+              0.118524547057033E+02
+              0.330655477950074E+00
+              0.189169262680866E+01
+              0.128013208594716E+02
+              0.981607643804608E+01
+             -0.619865379712576E+01
+             -0.121625683985079E+01
+             -0.213190697645466E+01
+             -0.214408345327152E+01
+             -0.225669837288864E+02
+             -0.713536920455688E+01
+              0.108673235876139E+02
+              0.622912924372152E+01
+              0.917583026238299E+01
+             -0.172431842932274E+02
+             -0.244838420268406E+02
+              0.608992803611140E+01
+              0.240990128458670E+02
+              0.124885159570148E+02
+             -0.123306377688737E+02
+             -0.241036338880226E+02
+             -0.131400732691375E+01
+              0.792267111604333E+01
+              0.798236374329514E+01
+             -0.312530673121475E+01
+              0.210738435223745E+02
+              0.645611679446463E+01
+             -0.147418827426702E+02
+              0.161036504608635E+02
+              0.865005497163358E+01
+              0.120865048735989E+01
+             -0.504267910836649E+01
+             -0.106899139684365E+02
+             -0.164406795843861E+02
+              0.526931955075419E+01
+             -0.328919948398266E+01
+             -0.106344439359247E+02
+              0.793661820417014E+00
+             -0.984100246292434E+01
+              0.601548675687424E+01
+             -0.261747730509086E+02
+              0.619892179508156E+01
+             -0.284253936194486E+01
+             -0.125665787523829E+01
+              0.797424677589584E+01
+              0.760035032325587E+01
+              0.333654705546052E+02
+              0.859405809040794E+00
+             -0.108441748581007E+02
+             -0.246868620175221E+02
+              0.128163158097947E+02
+             -0.132811216443298E+01
+              0.892724700045204E+01
+              0.538690241397357E+01
+             -0.315749243629545E+01
+              0.203870916824976E+02
+              0.168194953722964E+02
+             -0.422532293315911E+01
+              0.177050383997912E+02
+             -0.222096600936112E+02
+              0.534834740933206E+01
+              0.129512762927758E+02
+             -0.158369918798264E+02
+             -0.205546069599460E+02
+             -0.225034921569068E+02
+             -0.222412477230316E+02
+              0.212303849216343E+02
+             -0.171885944698113E+02
+             -0.278213146123748E+01
+              0.106301324726005E+02
+             -0.861300011552845E+01
+              0.341590945990531E+01
+              0.538848741830992E+01
+              0.118929518769157E+02
+             -0.191745748290728E+02
+              0.135410100153717E+02
+             -0.665181271629005E+01
+             -0.283477344997063E+02
+              0.104663739729890E+02
+             -0.680231821923691E+01
+             -0.158552852388269E+02
+             -0.740080807672380E+01
+              0.133063387837394E+02
+              0.103158650104896E+02
+              0.357465085474283E+01
+              0.621713066137008E+01
+             -0.390803556139787E+00
+              0.550113526295822E+01
+             -0.174245224600708E+02
+              0.319863770878462E+01
+             -0.369207175705560E+01
+             -0.142606548404760E+02
+              0.399767308170462E+01
+             -0.216961299201334E+01
+              0.204306179458415E+02
+              0.337652948263018E+01
+              0.227685882626409E+02
+              0.318370947970483E+01
+              0.643063821638425E+01
+             -0.616624974455897E+01
+             -0.562833618393457E+01
+              0.130511757674196E+02
+              0.505259241514485E+01
+             -0.113117811145154E+02
+              0.255483319273427E+02
+              0.188824601528010E+02
+              0.190769119379889E+02
+              0.128037489848199E+02
+             -0.462055452538726E+01
+             -0.316466907573670E+02
+             -0.228284403758755E+01
+             -0.884612541151301E+01
+             -0.121268206105528E+02
+              0.135459530904609E+02
+             -0.295799799609397E+02
+              0.126039146529102E+02
+              0.101678776160727E+02
+             -0.100903889780103E+02
+             -0.168790869653415E+01
+             -0.412585709319941E+01
+             -0.903269972954426E+01
+              0.961304173396756E+01
+              0.118508785325308E+02
+             -0.170322676182428E+01
+             -0.696300782001288E+01
+              0.265767946684753E+01
+             -0.306805421495767E+00
+             -0.185678378019051E+02
+             -0.129662849137333E+02
+             -0.982012608548104E+00
+             -0.144489453860406E+02
+             -0.776981599199724E+01
+              0.482530915330585E+00
+             -0.240606601094662E+02
+             -0.126044746538513E+02
+              0.786717056131039E+00
+             -0.305416842761241E+02
+              0.398919133774010E+01
+             -0.292691593992324E+02
+              0.159357190763859E+02
+             -0.126685234681636E+02
+              0.169817191059046E+02
+             -0.603105825001489E+01
+             -0.241511561341714E+02
+             -0.133242005000357E+01
+             -0.129835015598502E+02
+             -0.716869325306445E+01
+              0.467741061560392E+01
+             -0.269559150580970E+02
+              0.460409058933662E+01
+              0.131217553687096E+02
+             -0.258951251773973E+02
+             -0.302034990871581E+01
+             -0.239393827308927E+02
+             -0.266662406309395E+02
+             -0.170653193355194E+02
+             -0.258403106798693E+01
+             -0.131515100781490E+02
+              0.130079616822697E+02
+              0.144719183892825E+02
+             -0.106585072459625E+02
+              0.736562286064081E+01
+             -0.103593624888412E+02
+              0.924211660571868E+01
+             -0.139617391811526E+02
+             -0.139872899427550E+02
+              0.130851473147260E+02
+              0.997026122467202E+01
+              0.379722705435693E+01
+              0.145326829595318E+02
+              0.321642876757502E+02
+             -0.525720366001494E+01
+              0.994238268356898E+01
+             -0.283427297629610E+02
+             -0.261060162323395E+02
+             -0.125782694916418E+01
+              0.281033638803951E+01
+              0.819609866130887E+01
+             -0.210196154945024E+02
+              0.407623722350583E+01
+              0.253671088154856E+02
+             -0.200454825785815E+02
+             -0.368075357658182E+01
+             -0.277932491468631E+02
+             -0.286217366362293E+01
+              0.149316435370098E+01
+             -0.192794773885266E+02
+              0.590904256925192E+01
+             -0.286151592800587E+02
+             -0.122889756702750E+01
+             -0.212412039595824E+01
+              0.276058208754031E+01
+             -0.174623888111634E+02
+              0.130162840154579E+02
+             -0.212763065879903E+01
+             -0.241398920945426E+01
+              0.226164179367882E+01
+              0.891446675057789E+01
+              0.183550310569086E+02
+             -0.508901172621773E+01
+              0.139940192833942E+02
+              0.239692788106058E+02
+              0.454357945286813E+01
+             -0.973870531249048E+00
+              0.735130868931998E+01
+              0.220154517757636E+01
+             -0.288309062720461E+01
+              0.111026045612153E+02
+             -0.317049423620713E+01
+             -0.157313443146786E+02
+              0.875926281117464E+01
+             -0.111812552217698E+02
+             -0.898880504628463E+01
+             -0.147232770114613E+00
+             -0.204821322000701E+02
+             -0.521573072223217E+01
+             -0.224359724123463E+02
+             -0.122720998152116E+01
+             -0.603859264937736E+01
+              0.112784496522483E+02
+             -0.238753119421473E+02
+              0.218251420012002E+01
+              0.721477886975372E+00
+             -0.192995536606150E+02
+              0.113020797880467E+02
+              0.213558844144966E+02
+              0.564958363195751E+01
+             -0.184621034421318E+02
+             -0.204216576914062E+02
+              0.274625597314348E+02
+              0.207248310378766E+02
+              0.895149664531027E+01
+             -0.684175517539882E+01
+             -0.127957445303775E+02
+              0.120640983510434E+02
+              0.507214697908138E+01
+              0.237398610024108E+02
+              0.217585442463282E+02
+              0.184416570194149E+02
+              0.964825312665089E+01
+             -0.383103269809594E+02
+             -0.102996022713562E+02
+              0.488175458554388E+01
+             -0.809110877299921E+01
+              0.221916106273275E+02
+              0.951890146858156E+01
+             -0.880831993235019E+01
+             -0.267472841760664E+01
+              0.257026647314481E+02
+              0.250570406901619E+01
+             -0.281667889308436E+01
+             -0.434746159792211E+02
+              0.106550500144146E+02
+             -0.946883560846395E+01
+              0.195052295287014E+02
+             -0.168185301845621E+02
+             -0.258885935135628E+01
+              0.678801310136881E+01
+             -0.147610055109175E+02
+             -0.244491242176355E+02
+              0.111075468296889E+01
+              0.835706835805749E+01
+             -0.984343100793467E+00
+             -0.639703710824116E+01
+             -0.356642559459029E+01
+             -0.146879584547413E+02
+             -0.277697728673158E+02
+              0.346160408583017E+00
+             -0.104465051605644E+02
+             -0.257494055559897E+01
+             -0.111069671556180E+02
+              0.443635912490042E+02
+              0.932263792190807E+01
+             -0.149329672185679E+02
+             -0.140026053975630E+02
+              0.590464757961455E+01
+              0.108029861604766E+02
+              0.170154822254002E+02
+             -0.122040820285597E+02
+             -0.268507367458804E+02
+             -0.782039661188087E+01
+             -0.146374986471864E+02
+              0.150357920404270E+02
+              0.171939095702901E+02
+              0.232200386909687E+01
+              0.670263429794683E+01
+              0.117162345347644E+02
+              0.142054572031045E+02
+             -0.269856323249615E+02
+             -0.571108527876623E+01
+              0.178147019647275E+01
+             -0.406349264060422E+01
+             -0.117361733902352E+02
+              0.486486216858708E+00
+             -0.451010791590110E+01
+             -0.108374295379587E+02
+             -0.109352554312373E+02
+              0.449968087171809E+01
+             -0.338529297677014E+02
+             -0.172740109991686E+02
+             -0.146599493180308E+02
+              0.304072498915948E+02
+             -0.534125919493303E+01
+             -0.315183241433735E+01
+              0.328682423302946E+02
+             -0.161378912646272E+02
+              0.199620308838685E+02
+             -0.125652256928397E+02
+             -0.392126617978448E+00
+              0.589051634548213E+00
+             -0.276428333870079E+01
+             -0.150854617833392E+02
+              0.424380084361201E+01
+              0.235937934316095E+01
+             -0.116444516214835E+02
+              0.105958328311934E+02
+             -0.115106145937567E+02
+             -0.321845837412035E+01
+              0.319513727195844E+01
+              0.145992834818716E+01
+             -0.757795209286169E+01
+             -0.580156613041210E+01
+              0.152013775677050E+02
+              0.352287268468265E+01
+              0.616019731497354E+01
+             -0.136115078341661E+02
+             -0.121022154790427E+01
+             -0.510615961608141E+01
+             -0.506046435614172E+01
+              0.259524209252747E+01
+             -0.132738917876542E+02
+             -0.948974023502345E+01
+             -0.754342442611799E+01
+             -0.656388433761691E+00
+              0.157854875982577E+02
+              0.299028984905371E+02
+              0.524172652033712E+00
+              0.165013944125378E+02
+             -0.165253588358379E+01
+             -0.146158989214634E+02
+              0.680242460274854E+00
+             -0.145555017047628E+02
+             -0.825014725491403E+01
+              0.600240185438473E+01
+              0.268863422272513E+02
+              0.101513344170871E+01
+             -0.150156615246450E+02
+              0.120729319646688E+02
+              0.412510132361503E+01
+              0.577568902676873E+00
+             -0.606214759348696E+01
+             -0.149365437278176E+02
+              0.176019838326681E+01
+              0.223820433660124E+02
+              0.136827976495645E+02
+              0.417449405115530E+01
+              0.320587265741963E+02
+              0.128488181466321E+02
+             -0.115262057786134E+02
+              0.222616733622107E+02
+              0.108051771084944E+02
+              0.114567686346484E+02
+              0.885185566438358E+01
+              0.140997923401731E+01
+              0.801307525153197E+01
+              0.155667774208390E+02
+             -0.323827945147032E+02
+             -0.163976893768485E+02
+             -0.152992040423259E+02
+             -0.221663398076898E+02
+              0.121536543968752E+02
+             -0.173644038904810E+02
+              0.346920650899290E+01
+             -0.141400884357661E+02
+             -0.290699900076331E+02
+             -0.680013605792780E+01
+             -0.150243962893207E+02
+             -0.369338949477117E+02
+             -0.242097565528030E+02
+             -0.698096964644367E+01
+              0.655877957813871E+01
+             -0.131736121580402E+02
+             -0.140084298581375E+02
+              0.862210648854982E+01
+              0.172522324807452E+02
+              0.259648747494438E+02
+             -0.817974193173114E+00
+              0.434850587702783E+01
+             -0.525672058775578E+01
+             -0.134385139503710E+02
+              0.586275137059260E+00
+             -0.135858801926892E+02
+             -0.177891223081614E+02
+              0.170616565677161E+02
+             -0.156099904642234E+02
+              0.437308810448599E+00
+             -0.169007195738627E+01
+              0.229962260197664E+02
+             -0.801914550683045E+01
+              0.148691059457059E+01
+             -0.381986655680633E+01
+             -0.189679535975542E+01
+              0.100049656517858E+02
+             -0.180549047771062E+02
+              0.498745594147849E+00
+              0.262902916390344E+02
+              0.249631711662402E+02
+              0.280891174767356E+02
+             -0.843120080976296E+01
+             -0.162058047842279E+02
+             -0.275085765678011E+01
+             -0.111865586699729E+02
+             -0.893600402166328E+01
+              0.418877593941172E+01
+             -0.649589924015647E+01
+              0.249762756217336E+02
+             -0.491545097777157E+01
+              0.250790472005598E+00
+              0.194819037800794E+01
+             -0.521021468931453E+01
+             -0.374322210430432E+01
+              0.114820198083020E+02
+             -0.185856684391261E+02
+             -0.645207735676195E+01
+              0.472771848251732E+01
+              0.133241975666793E+02
+             -0.104518048761913E+02
+              0.913602324121644E+01
+             -0.208246364792118E+02
+             -0.263842454428328E+01
+              0.250981803429048E+01
+              0.509782054184270E+01
+              0.384702418456675E+01
+              0.241935816541840E+02
+             -0.181141788725832E+02
+              0.171562452242873E+02
+             -0.187469162254167E+02
+              0.148800008825263E+02
+             -0.129487328544434E+02
+              0.335848913495641E+01
+             -0.156511685701583E+02
+              0.842866335690566E+01
+             -0.121859380307176E+01
+             -0.437316110139651E+02
+              0.178517821934446E+02
+             -0.608333078164918E+00
+              0.117844213211391E+02
+             -0.101905012037259E+02
+              0.244442921605117E+02
+              0.961603627478836E+01
+              0.168312052664386E+02
+             -0.186278345085053E+01
+             -0.517544871816867E+00
+             -0.187933506117381E+02
+             -0.176153569715148E+02
+             -0.136921293845912E+02
+              0.985902164862428E+01
+             -0.207324779526160E+02
+             -0.236496145785264E+01
+             -0.673733500071003E+01
+              0.111740743357012E+02
+              0.942810786905707E+01
+             -0.607514493051406E+01
+              0.225859516986943E+02
+             -0.427583553897050E+01
+             -0.104934278207958E+02
+             -0.660673104825011E+01
+              0.211487893997776E+02
+              0.213240617033331E+02
+              0.184278579581087E+01
+             -0.202685188480683E+02
+              0.587520288754783E+01
+              0.558567076596691E+01
+              0.120050800565732E+02
+              0.109006952074103E+02
+              0.567995463422857E+01
+             -0.255988043785817E+01
+             -0.347177008500186E+02
+              0.909004738874547E+01
+              0.954996643297149E+01
+              0.134742516102362E+02
+              0.188247833505469E+01
+              0.477541203609387E+01
+              0.483522954587769E+01
+             -0.746304229615555E+01
+              0.145508033608096E+02
+             -0.134870091617189E+02
+              0.206307232652566E+01
+              0.828915898227081E+00
+              0.782154851861459E+01
+             -0.308485454793564E+02
+             -0.605617713632981E+00
+             -0.851293227732443E+01
+             -0.129617791754680E+02
+              0.188565516351829E+01
+             -0.151361093065305E+02
+              0.190703238103625E+02
+             -0.294945724627611E+02
+              0.135235727598766E+02
+              0.435205748328775E+01
+             -0.255579856705337E+01
+             -0.121676595307923E+02
+              0.120736053719889E+02
+             -0.144389406306435E+02
+             -0.987554554335563E+01
+             -0.129557807632969E+02
+             -0.445388652680433E+01
+             -0.840125845631624E+01
+              0.287153349990966E+01
+              0.112876407776780E+02
+             -0.120833312436611E+01
+             -0.145248142453919E+01
+              0.265085986081764E+02
+             -0.401910435705886E+01
+             -0.159136440090633E+02
+             -0.189714523477810E+02
+              0.185448209828144E+02
+              0.350842661821360E+01
+              0.861005838370630E+01
+              0.346530078686419E+01
+              0.179142286432745E+02
+             -0.769163641984371E+01
+              0.707683800597809E+01
+              0.137166707711729E+01
+             -0.240008187359812E+02
+             -0.679732012095917E+01
+              0.529061772746303E+01
+              0.497961446523408E+01
+              0.165229024102408E+02
+             -0.331491094538205E+01
+              0.188989955801995E+02
+              0.708793045912778E+01
+             -0.402280699844312E+00
+              0.240812066763058E+01
+              0.128290921798422E+02
+              0.295809976490381E+02
+              0.292486162072754E+01
+              0.215487555169644E+02
+             -0.129086060436893E+02
+             -0.222410254373153E+02
+             -0.155323052773089E+02
+             -0.590427526990371E+01
+              0.142357699602715E+02
+             -0.197027079808478E+00
+              0.805176312408662E+00
+             -0.117322423461556E+02
+             -0.500077874590917E+01
+              0.243516389211290E+01
+              0.918412846267151E+01
+             -0.104171396481857E+02
+              0.178563040848288E+02
+              0.558459151420996E+01
+              0.217182494734317E+02
+             -0.777239948348995E+01
+              0.222269169736684E+02
+             -0.601642383065612E+01
+              0.232946478500292E+02
+              0.651102313863524E+01
+             -0.112348349590660E+02
+             -0.147337247432445E+02
+             -0.182006058770179E+01
+              0.156886622695366E+02
+              0.892153269118042E+01
+             -0.987902284609603E+01
+              0.785391756268697E+01
+             -0.102166362789243E+02
+              0.156315063455593E+02
+             -0.193023971563096E+01
+              0.640005753298703E+01
+              0.252016029390158E+02
+             -0.280714777195669E+01
+              0.600226839541824E+01
+             -0.101996689677822E+02
+             -0.561662017866195E+01
+             -0.190683547037039E+02
+             -0.234262256529269E+01
+             -0.387897343079163E+02
+             -0.179001329708071E+02
+             -0.115101161691494E+02
+             -0.212611223329619E+02
+              0.731762889919376E+01
+             -0.854099290042204E+01
+              0.757228125485349E+01
+             -0.997856507061871E+01
+              0.116308343173786E+02
+              0.184241205842956E+02
+              0.190383413106356E+02
+             -0.988529667379494E+01
+              0.768766781370612E+01
+              0.174688381555094E+02
+             -0.490648410731586E+01
+             -0.753055720131506E+01
+              0.154921224735830E+00
+             -0.147858164117078E+02
+             -0.156470276528456E+02
+              0.994727412302302E+01
+              0.672223875818949E+01
+              0.111026704610744E+02
+             -0.163816206506017E+01
+             -0.187281190929412E+02
+              0.898394065403345E+01
+             -0.781253035848825E+01
+             -0.232700576045914E+01
+              0.182923516523195E+02
+             -0.491580430564287E+01
+              0.232974864703900E+01
+              0.233523821536739E+02
+              0.441951852088619E+01
+              0.130855608076072E+02
+             -0.935095424237250E+01
+             -0.699223304649607E+01
+              0.752051349279324E+01
+             -0.780338969160968E+01
+             -0.996429429597961E+01
+              0.299247145172379E+02
+             -0.107169569866582E+02
+              0.104614780780896E+02
+              0.961411788201929E+01
+              0.876096686647071E+01
+              0.159048780965364E+01
+             -0.233701794801397E+02
+              0.166552809831766E+02
+             -0.293185088237565E+02
+              0.191007685701133E+02
+             -0.549398200660870E+01
+              0.146112489615785E+02
+             -0.875140207527750E+00
+             -0.187757511711060E+02
+              0.118455775702451E+01
+              0.119893491277276E+02
+             -0.186341285209743E+02
+             -0.110295177949519E+02
+             -0.248051677328943E+02
+              0.272034266239138E+02
+              0.419928303229054E+01
+             -0.103226640975640E+02
+             -0.900218961778194E+00
+             -0.715975379500716E+01
+              0.365763581991885E+01
+              0.315028719009723E+02
+              0.129137134154600E+02
+             -0.894459939936552E+01
+              0.205641418648535E+02
+             -0.166313642267755E+02
+              0.851109622170867E+00
+              0.289357268453449E+02
+             -0.175680556311728E+01
+              0.148262707725157E+02
+              0.167352192199001E+02
+              0.721942357765472E+01
+             -0.166846003397552E+02
+              0.169095134371881E+01
+              0.243867001068008E+02
+             -0.213338642115906E+01
+              0.130332078611978E+02
+              0.155086185444971E+02
+             -0.138427821136695E+01
+             -0.766793357241879E+01
+             -0.104104895176580E+02
+              0.633338753104969E+01
+             -0.752796510055902E+00
+             -0.178850167688509E+00
+             -0.151029729120064E+01
+              0.941442331687495E+01
+             -0.186555024651722E+01
+             -0.239328023310849E+02
+             -0.166284078238147E+02
+             -0.180820155721506E+02
+              0.758886135171542E+01
+              0.106462077783040E+02
+              0.778741952057516E+00
+             -0.141287526620107E+02
+              0.144417639534120E+02
+             -0.850266969324466E+01
+             -0.880323206902439E+01
+             -0.119049064934648E+02
+              0.156832346767743E+02
+             -0.187090990507456E+02
+             -0.347341909960451E+01
+              0.125569907323961E+01
+              0.454771995441607E+01
+              0.212569122148867E+01
+             -0.382355714618656E+01
+             -0.868806412082670E+00
+              0.207612306264222E+01
+              0.241098825978620E+02
+              0.884443512702165E+01
+              0.816613669225643E+01
+              0.246296247251058E+01
+             -0.117775119782732E+02
+             -0.148924924107552E+02
+             -0.648572216397736E+01
+             -0.710328880867280E+01
+             -0.235807280974615E+02
+             -0.524727972359615E+01
+              0.622125649652948E+01
+             -0.129421341605984E+02
+              0.721837952606833E+01
+             -0.384584883976491E+01
+             -0.190477526900020E+01
+             -0.260557436201785E+01
+             -0.169961721537550E+02
+             -0.476871441512131E+00
+              0.383913830781887E+01
+              0.244527632515596E+01
+              0.164274414940491E+02
+             -0.217532217660286E+02
+              0.504762513883963E+01
+              0.514005004135045E+01
+              0.102699785090045E+02
+              0.116865639190626E+01
+              0.245831923415261E+02
+              0.155735754378004E+02
+             -0.247762021317926E+01
+             -0.970639028645284E+01
+             -0.324253756143128E+01
+             -0.151103947022268E+02
+             -0.149595634533149E+02
+             -0.234980361596329E+02
+             -0.241324909518720E+02
+              0.109025647223589E+02
+             -0.616356519069089E+01
+              0.749761691672279E+01
+             -0.256385477599486E+01
+             -0.164021788424532E+02
+             -0.507019545122822E+01
+              0.503087641225331E+01
+             -0.192971457257650E+02
+              0.584025443139718E+01
+             -0.178181704773687E+02
+              0.120353204436343E+02
+              0.878510259938114E+00
+             -0.106456079643030E+01
+             -0.154298145816089E+02
+             -0.303173537047940E+02
+              0.717757629014511E+01
+              0.452969865916081E+01
+              0.909560307053837E+01
+              0.165721141741312E+02
+             -0.283614345292878E+01
+             -0.108891751858076E+02
+             -0.217305463311903E+02
+              0.239542997419683E+01
+              0.741231554766992E+01
+             -0.222537809154775E+01
+             -0.238955668372671E+02
+             -0.952163616430834E+01
+              0.139936479916329E+01
+             -0.128608138470462E+02
+             -0.168243388170336E+02
+              0.942966052569528E+01
+             -0.344692713489204E+01
+             -0.318676127889766E+01
+              0.611718241466161E+01
+             -0.269705642514592E+01
+              0.165937047754843E+02
+             -0.747940416945028E+00
+             -0.652526018473705E+01
+              0.133992844917400E+02
+              0.330844518730437E+01
+              0.112936135356735E+02
+              0.117097265186637E+02
+              0.356824299301485E+01
+              0.280292710090322E+00
+             -0.107861258296051E+02
+              0.212591513780476E+02
+             -0.622928371879585E+01
+              0.150755528492018E+02
+              0.159021535098103E+02
+             -0.817337906950050E+01
+              0.255207585522046E+02
+              0.202640350524596E+02
+             -0.216705436263675E+02
+             -0.113528904633790E+02
+             -0.204565372188320E+02
+              0.148061393980731E+02
+             -0.179229533416500E+01
+              0.443895245574410E+01
+             -0.204474617873003E+02
+             -0.107368392475500E+02
+             -0.639981985406753E+01
+              0.163895166706122E+02
+             -0.122682859733155E+02
+              0.845553852717675E+01
+              0.261650755852392E+01
+              0.190260926266834E+02
+             -0.271179321840395E+01
+              0.276066523670139E+01
+              0.544988026598659E+01
+              0.513145508833077E+00
+              0.164931107101631E+02
+              0.378722514031716E+01
+              0.130647218337799E+01
+              0.225055955620519E-01
+             -0.101989306701235E+02
+              0.550187792167645E+01
+              0.960376176054757E+01
+             -0.380399120405165E+02
+             -0.169788185222822E+02
+              0.575871357112760E+01
+              0.150134647692736E+02
+             -0.473102858183397E+01
+              0.303972386078385E+01
+              0.604626068377382E+01
+              0.204780881600106E+02
+              0.237530482997632E+02
+              0.379467596523276E+01
+              0.111374306055993E+02
+              0.162346000632055E+02
+              0.754938182810236E+01
+             -0.201157037792066E+01
+             -0.207651674793192E+02
+              0.130401619098906E+02
+              0.206409777763616E+01
+             -0.190146458370461E+02
+              0.449893058686268E+01
+              0.836746344451697E+01
+              0.219309054480578E+02
+             -0.348917129142410E+01
+             -0.128181372740730E+02
+              0.145791733042751E+02
+             -0.156763040565134E+02
+             -0.886652924697784E+01
+             -0.105807913276960E+02
+              0.164246839645944E+02
+              0.195472269518981E+01
+             -0.764786692079885E+01
+             -0.212694252934348E+02
+              0.272879500708399E+00
+             -0.266027792192139E+02
+              0.215076372768106E+02
+              0.765180104477815E+01
+             -0.103765389895688E+02
+              0.976757651799234E+01
+              0.136792224834821E+02
+              0.266900344080649E+02
+              0.165670862245699E+02
+             -0.664864772774231E+01
+              0.249422001820397E+02
+             -0.115130521426932E+02
+             -0.521506342534536E+01
+              0.184234921379513E+02
+             -0.258645806206412E+02
+              0.137782837268347E+02
+              0.473080339628132E+01
+             -0.915080405397997E+01
+             -0.215318198149959E+01
+             -0.126325675463562E+02
+              0.392296966754458E+01
+             -0.808366715047575E+01
+             -0.963696074847235E+01
+              0.170514971772644E+02
+              0.791765506061378E+01
+              0.270523259825920E+02
+              0.898759172036380E+01
+             -0.774624859727422E+01
+              0.118472631072533E+02
+             -0.154925217798359E+01
+              0.833187122208818E+01
+              0.148637635726550E+01
+             -0.300921982017843E+01
+              0.501768557107227E+01
+             -0.790303692688410E+01
+              0.339908062492185E+00
+              0.277007125830266E+01
+             -0.716057835675009E+01
+             -0.425426101932358E+01
+              0.786575026889383E+01
+              0.159523182849201E+02
+             -0.200015009861759E+02
+             -0.185708919475873E+02
+             -0.345587128577914E+02
+              0.411711235794409E+01
+             -0.121907932026614E+02
+             -0.154040942008479E+00
+             -0.133518574745926E+02
+             -0.162875464321783E+01
+              0.358960633906204E+01
+             -0.176109388357236E+02
+              0.312124176883347E+01
+              0.117371864383884E+02
+              0.662254893897370E+01
+             -0.100384514277692E+02
+              0.386006364264098E+01
+             -0.134377783791075E+01
+              0.176606633664559E+02
+             -0.179254850363381E+01
+              0.527505011806515E+01
+              0.434563059527127E+01
+             -0.112622823560552E+02
+             -0.158133017295342E+02
+             -0.156998292882258E+01
+              0.235085454712718E+01
+              0.487157231422639E+01
+              0.941252700950768E+01
+              0.557421162343289E+00
+             -0.162078281782563E+02
+              0.588079119781906E+01
+             -0.107832789251073E+02
+             -0.269274891932640E+02
+             -0.267058189350358E+02
+              0.231924590727458E+02
+             -0.124950646122763E+02
+             -0.911151235698699E+01
+             -0.119080621964122E+02
+              0.848272320606668E+00
+              0.228107220061210E+01
+             -0.144410024851770E+02
+              0.794840337232438E+01
+              0.206295120671615E+01
+              0.672195741065531E+01
+             -0.141564025574595E+02
+             -0.134144691165434E+02
+             -0.123406356233450E+02
+             -0.916726954128780E+00
+              0.547943181459982E+01
+             -0.819334079993611E+01
+              0.372718836520114E+01
+              0.145070598715598E+02
+              0.585314430354020E+01
+             -0.537175509698672E+01
+              0.179125014698102E+02
+             -0.135919993210108E+02
+              0.642158281608619E+01
+             -0.137328549459891E+02
+             -0.228273318176190E+01
+              0.101625590345201E+01
+             -0.198788627424663E+02
+             -0.312510792217358E+02
+              0.126894270375445E+02
+              0.139652418342880E+02
+             -0.346422387150434E+01
+             -0.129659632168763E+02
+              0.197834864003791E+01
+             -0.315718756432481E+01
+              0.164558681699791E+02
+              0.187495502510195E+01
+              0.957368421773384E+01
+              0.146688091081763E+02
+              0.540873602260359E+01
+             -0.140576363103404E+02
+              0.255136268164635E+02
+             -0.163016662173412E+01
+              0.543372635239489E+01
+             -0.974405845792717E+00
+             -0.314172090696917E+01
+             -0.246928077406500E+01
+             -0.190533373731398E+01
+              0.179191134608779E+01
+              0.274140114401861E+02
+             -0.236044692127199E+02
+             -0.751734470867984E+01
+             -0.184239040026940E+01
+             -0.219284727303087E+02
+             -0.180994935262514E+02
+             -0.147835483018884E+02
+              0.131769721977466E+02
+             -0.799122102293737E+01
+             -0.583310847301523E+01
+              0.158928443169029E+02
+              0.158490040563020E+02
+             -0.717125674972252E+01
+              0.185525088631329E+01
+             -0.956306455191374E+01
+              0.167176052173316E+02
+              0.116063721485048E+02
+              0.309478219366579E+02
+              0.158408461725698E+02
+             -0.186321367232193E+02
+             -0.285088623097500E+02
+              0.215879198562742E+02
+             -0.919970990412962E+01
+              0.748908831625062E+00
+              0.710840606905925E+01
+             -0.204035625678212E+02
+             -0.661905675697795E+01
+             -0.200616704630343E+01
+             -0.185033779183252E+01
+             -0.676719898906065E+01
+              0.662875557652234E+01
+             -0.507063412676517E+01
+             -0.147616982190602E+02
+              0.617336685703572E+01
+              0.250948181008069E+02
+             -0.393026344210786E+01
+              0.112083839767411E+02
+              0.140768012576268E+02
+             -0.115486267581337E+02
+              0.101172300632226E+02
+             -0.813399594308146E+01
+              0.120801196691285E+02
+             -0.229051153437858E+01
+              0.347864372106617E+01
+              0.276391745415426E+02
+             -0.189133954204295E+02
+              0.437619300303973E+01
+             -0.142727945028292E+02
+             -0.726993441591333E+01
+              0.797281155270353E+01
+             -0.210664390934677E+02
+              0.384126303827802E+00
+              0.111080679170960E+02
+              0.179197403485103E+02
+             -0.104728319582866E+02
+             -0.860880530862836E+01
+             -0.100151391749676E+02
+             -0.148133010552784E+02
+              0.131338961452508E+02
+              0.404833708803363E+01
+              0.154838502309558E+02
+              0.977439167987335E+01
+             -0.100349018697568E+02
+              0.638691120294739E+01
+              0.181835146632878E+01
+              0.928480876155083E+01
+              0.394014402273498E+02
+              0.422391677504544E+02
+              0.868017436334691E+01
+              0.312096738497837E+01
+             -0.862163604814927E+01
+             -0.161616796626726E+02
+              0.884356799524323E+01
+              0.832537806020910E+01
+              0.140681286830861E+02
+             -0.303949308115747E+00
+              0.986357314177366E+01
+              0.609198012393131E+01
+              0.478567226803108E+01
+              0.127629728289463E+00
+             -0.146891876985515E+02
+              0.175540771944731E+02
+             -0.182553666650561E+02
+              0.176799136216097E+02
+              0.190000373412229E+02
+             -0.123760996247718E+02
+             -0.119417949770857E+02
+             -0.201781160865912E+02
+              0.243826117893042E+01
+             -0.141536103660114E+02
+             -0.176572409342047E+01
+              0.190502594216302E+02
+             -0.107213043977544E+01
+              0.328002105007646E+01
+             -0.115023650783491E+02
+             -0.178410524769962E+02
+              0.158212880266279E+02
+              0.104887879037321E+02
+              0.214752936512315E+02
+             -0.806919789465746E+01
+             -0.257527849509266E+02
+              0.211507637094243E+00
+              0.291229318393831E+02
+             -0.370750436580197E+01
+              0.155938272477159E+02
+             -0.101899636970861E+02
+              0.178789211192724E+02
+              0.405660946921910E+01
+              0.638580719755860E+01
+             -0.134735790206608E+02
+              0.100834580387464E+01
+             -0.162369896450061E+02
+              0.114823747187944E+02
+             -0.131677458225025E+02
+             -0.261373518628119E+01
+              0.106986527584329E+02
+              0.232737297272249E+01
+              0.282060630899086E+02
+             -0.208187701465512E+02
+              0.158834119948344E+02
+             -0.525878596607629E+01
+              0.131140231316341E+02
+              0.820525551355303E+01
+              0.730666780473092E+01
+              0.163931619672310E+02
+             -0.930365824965384E+01
+              0.105544556699100E+01
+             -0.168868690455420E+02
+             -0.228147551718054E+02
+             -0.216898937479985E+01
+             -0.129842802765741E+02
+              0.200715194070230E+01
+              0.543947316262962E+01
+              0.133802091697519E+02
+             -0.177595093757142E+02
+              0.161852689723877E+02
+             -0.478592986070229E+02
+              0.205625580200044E+02
+              0.124364844438903E+02
+              0.692521020498605E+01
+             -0.164331644608067E+02
+              0.483487924935437E+01
+             -0.123675449038833E+02
+              0.136368948293477E+02
+              0.202633835388455E+02
+             -0.204952098881930E+02
+              0.260179839435580E+02
+              0.214361883963367E+02
+             -0.127759175728615E+02
+              0.141509194084992E+01
+              0.105823896780834E+00
+              0.272991144726489E+02
+              0.486162288702799E+01
+              0.918691116354577E+01
+              0.720072724971268E+01
+              0.287324650024630E+00
+             -0.466978578694091E+01
+             -0.161733021883670E+01
+              0.128973914847502E+02
+              0.183390737015726E+02
+              0.856484835062059E+01
+              0.425093345795115E+01
+             -0.102726051177794E+02
+              0.568713583171386E+01
+              0.645229105262118E+01
+             -0.112857548711068E+02
+             -0.119774772350216E+02
+             -0.236429477362661E+01
+             -0.244592983880396E+02
+              0.196504313917937E+01
+              0.198295024900833E+02
+             -0.101216554189383E+02
+             -0.813048266087741E+00
+             -0.784206456516111E+01
+              0.130961113272055E+02
+              0.200887068704946E+02
+              0.967739355627286E+01
+              0.132489631166465E+02
+             -0.114682289138418E+02
+             -0.362141198850404E+01
+              0.129694157795121E+02
+             -0.207348496842381E+02
+              0.339113236589011E+02
+              0.247384610360093E+02
+             -0.262314512742579E+02
+              0.113617356668118E+02
+             -0.665533193222247E+01
+             -0.125515639925892E+02
+              0.809066572560940E+01
+             -0.118252099022625E+02
+              0.393347676892179E+01
+              0.345646598618248E+01
+              0.543298133676756E+01
+             -0.284578695286892E+02
+              0.355321272117044E+01
+             -0.121174578071222E+01
+             -0.730413267287418E+00
+             -0.583818948312411E+01
+             -0.135018723663615E+02
+              0.254718968954517E+02
+             -0.166641444007368E+02
+              0.133116822678918E+02
+             -0.352222355718430E+01
+             -0.745654939905268E+01
+              0.531501117393094E+01
+             -0.257425828776263E+02
+              0.245516864911101E+02
+              0.717335235716119E+01
+             -0.662412950082116E+01
+             -0.160750262352096E+02
+             -0.166154702824007E+01
+              0.686002114517183E+01
+              0.336909015860742E+02
+             -0.127341722831923E+01
+             -0.204605910049688E+02
+             -0.963669254461036E+01
+             -0.222165978310066E+02
+              0.914189445306073E+01
+             -0.113263368205543E+02
+             -0.119567045048926E+02
+              0.162070387059003E+02
+             -0.143822675377556E+02
+             -0.136758431839457E+02
+              0.400700745760588E+01
+             -0.224585237158502E+01
+             -0.130696179118941E+02
+              0.376134512341420E+01
+             -0.155317448178056E+02
+              0.408908779607361E+01
+              0.170008156679930E+02
+             -0.376112918360332E+01
+              0.533064173999300E+01
+             -0.142588129834135E+02
+             -0.222039396173781E+02
+              0.491647291690575E+01
+             -0.324215967757453E+01
+              0.368229424023843E+01
+              0.410084828340935E+00
+             -0.198092302144138E+01
+              0.942770740159699E+01
+              0.442491731866966E+00
+             -0.182927410290245E+02
+              0.158770049018584E+02
+              0.464667001352157E+01
+             -0.384676694878932E+01
+              0.797024370621313E+01
+              0.193543344693800E+02
+             -0.106369821964624E+02
+             -0.151916193176701E+02
+              0.452391341218057E+01
+             -0.153384287403870E+02
+              0.720002745654863E+01
+              0.154816761695118E+02
+              0.701465334361099E+01
+              0.942279272428729E+01
+              0.581583850651024E+01
+             -0.256755295472381E+02
+              0.310009323633990E+02
+              0.417177211158042E+01
+             -0.212140107883986E+01
+             -0.300858516070658E+02
+             -0.681452473561671E+01
+             -0.563604869260152E+01
+              0.138248478755552E+02
+              0.508442002859851E+01
+              0.136598073481853E+02
+              0.209875083678660E+02
+             -0.682337256722101E+01
+              0.600783605188341E+01
+              0.171293018565921E+02
+             -0.282057109752367E+01
+              0.116529156707747E+02
+             -0.195679426413734E+02
+              0.611710751659434E+01
+              0.336452209630868E+02
+              0.763684455342595E+01
+             -0.165340032215338E+02
+              0.603986308792107E+01
+             -0.157798249511883E+02
+             -0.854177645672367E+01
+             -0.104837140997198E+02
+             -0.199086427363358E+01
+              0.269630037882507E+01
+             -0.273777373135704E+02
+             -0.768816213198971E+01
+              0.106226112791045E+01
+             -0.121823819811036E+02
+             -0.277761968797565E+02
+             -0.251289423907733E+02
+              0.263675974104071E+02
+             -0.778185370071826E+01
+              0.106866224680676E+02
+              0.624502770448166E+01
+             -0.405417415186957E+01
+             -0.650225000581938E+01
+              0.100948554751308E+02
+              0.174878276160384E+02
+              0.165130537845666E+02
+              0.384909471111092E+01
+             -0.266441635388976E+01
+              0.594104370878875E+01
+              0.865484027151441E+01
+              0.121171410091682E+01
+              0.236443945799868E+02
+              0.365453476958233E+02
+             -0.130956904057476E+02
+             -0.142560621651281E+02
+             -0.244820681177106E+02
+             -0.147416447409515E+01
+             -0.892979458349390E+01
+              0.113424287438581E+02
+              0.383347259879771E+01
+              0.138426791392970E+02
+              0.628642239300584E+01
+              0.102326702438505E+02
+             -0.572738038759860E+00
+              0.314463220518308E+02
+              0.527065365810938E+01
+             -0.485069976044220E+01
+              0.571257200378625E+00
+             -0.318569138096888E+01
+              0.258235041619898E+02
+             -0.148182276624787E+01
+              0.555637628113298E+01
+              0.186222505190236E+02
+              0.408481801148665E+01
+             -0.146978307901290E+02
+             -0.214191814893510E+02
+              0.225163304945255E+00
+             -0.240913574978109E+02
+              0.817404873608162E+01
+             -0.487668011774381E+01
+             -0.113153644471650E+02
+              0.101741023641874E+02
+              0.390105435023210E+01
+              0.917698190109565E+01
+              0.812645642870748E+00
+              0.146172710787365E+02
+             -0.238873057226171E+02
+             -0.219013033285506E+01
+             -0.208336446836336E+02
+              0.375561453777757E+01
+              0.112829449037206E+02
+             -0.208318726848091E+01
+             -0.784776233478924E+01
+              0.167853434885432E+02
+             -0.778056970941517E+01
+              0.546813002289747E+01
+             -0.488088734015966E+01
+              0.119828530102976E+02
+              0.144723456410240E+02
+             -0.624268426737990E+01
+              0.124496850872035E+02
+              0.477819669885665E+01
+             -0.128382960432065E+02
+             -0.768096516787165E+01
+              0.207031800713276E+02
+              0.981419701497744E+01
+             -0.947010448645244E+00
+             -0.278576955580144E+01
+              0.304314606584182E+02
+              0.182493763838651E+02
+              0.668877782369907E+01
+             -0.195009587182202E+02
+              0.305429232043642E+02
+             -0.138113924191460E+02
+             -0.171263219325553E+02
+             -0.265280323771212E+02
+              0.127850999518052E+02
+             -0.242709769296725E+02
+              0.105251364366472E+02
+              0.172794648873211E+02
+              0.128049235859245E+02
+              0.271531592533710E+01
+              0.763659922203335E+01
+             -0.191298038653974E+02
+             -0.680116734683715E+01
+             -0.617030269187900E+01
+              0.924334368573562E+01
+              0.206295314744968E+02
+              0.203379897026192E+02
+              0.155668757585535E+02
+             -0.384491374101535E+01
+              0.552840919731423E+01
+              0.775924594641708E+00
+             -0.611271956345941E+01
+              0.911920928885490E+01
+              0.873545925456452E+01
+             -0.124580614337375E+02
+             -0.126146755176194E+02
+             -0.578350650034656E+01
+              0.133978742174810E+02
+              0.681658609557573E+01
+             -0.912411697113631E+01
+             -0.158938468515957E+02
+             -0.218381373254015E+02
+              0.456242632919206E+00
+              0.621675628016342E+01
+             -0.844867987463433E+01
+              0.310199963897124E+02
+              0.292801334834593E+00
+             -0.360347868855011E+02
+              0.903676817167425E+01
+              0.148719150736615E+02
+             -0.540282312418712E+01
+              0.570016795863239E+00
+             -0.814835612000013E+01
+              0.138375999215851E+02
+              0.682937830966438E+01
+             -0.182099321337930E+02
+              0.216225145202796E+02
+              0.147383951105421E+01
+             -0.863534772378075E+01
+             -0.106453499603707E+02
+              0.433504615978372E+02
+              0.193766206692156E+02
+             -0.486149899731015E+01
+              0.106886633598531E+02
+             -0.211272094656193E+02
+             -0.458308414481922E+01
+             -0.187768389383556E+02
+              0.725270928306971E+01
+              0.134770443446410E+02
+              0.148242627035449E+02
+             -0.649712213657352E+01
+              0.112573413158162E+01
+              0.184697343781973E+02
+              0.590686098783286E+01
+              0.110108008219921E+02
+              0.447939699569667E+01
+             -0.247887218703396E+01
+              0.460467851914643E-01
+             -0.343274190198586E+01
+              0.382694381396109E+01
+              0.128506292493218E+01
+             -0.167783184046034E+02
+              0.257048219391829E+02
+              0.989186343329500E+01
+             -0.182147206117190E+02
+             -0.133847458892868E+02
+             -0.188950469901207E+02
+             -0.819152082833432E+01
+             -0.593960355386659E+01
+             -0.149468623883878E+02
+             -0.147537702021989E+02
+              0.177610972385382E+02
+              0.141374689383905E+02
+             -0.195265732820837E+01
+              0.212240801021355E+02
+              0.305946527148933E+01
+             -0.341087251429380E+02
+              0.183146859476984E+02
+              0.312482592300616E+01
+              0.143823795311711E+02
+              0.194427659740304E+01
+              0.162100019495730E+01
+              0.292989959925455E+01
+              0.776986241752358E+01
+             -0.142323231695831E+02
+             -0.671419143252906E+01
+             -0.134591983314486E+02
+             -0.111376554906529E+02
+              0.464252428023636E+01
+             -0.123579904932955E+02
+              0.595304237030059E+01
+              0.817555953245717E+01
+             -0.757331804850111E+01
+             -0.483745948847414E+01
+              0.319270871177913E+00
+              0.212050715984790E+02
+              0.320695258743169E+01
+              0.203545354293395E+02
+              0.729730747506559E+01
+             -0.269089452061268E+02
+             -0.892342349639491E+01
+              0.917502446423379E+01
+              0.211735412051088E+02
+              0.349396951534671E+01
+              0.870362210854324E+01
+              0.194855653001153E+02
+             -0.112817621548540E+02
+             -0.173187426113747E+02
+              0.240157169997631E+02
+              0.139958948217705E+01
+             -0.253819331772653E+02
+              0.927454186044662E+01
+              0.160673681152953E+02
+             -0.411004196373892E+01
+             -0.167331616118335E+02
+              0.348767272148115E+01
+              0.722710339248522E+00
+             -0.813064005825360E+01
+              0.311062432615046E+01
+             -0.270911837423133E+01
+              0.377660798902029E+02
+              0.109948095772695E+02
+             -0.159952886246984E+02
+              0.472395591339455E+01
+              0.229940716562829E+02
+             -0.155449380302682E+02
+             -0.404737111011086E+01
+             -0.147014413788575E+02
+              0.117813824389246E+02
+              0.372527847669457E+01
+              0.778930511312443E+01
+              0.141060217472661E+01
+              0.267098539954947E+02
+             -0.151929722396784E+02
+             -0.119962512211463E+02
+             -0.115822400261501E+02
+              0.101752969214530E+02
+              0.265426756876618E+02
+             -0.443821140363647E+01
+              0.108613095841468E+02
+             -0.154246722719208E+02
+              0.296194169237414E+01
+             -0.493691242873846E+01
+              0.108376390636167E+01
+             -0.598202022693301E+01
+             -0.487577282854767E+01
+             -0.479169346201770E+01
+              0.394542400755967E+01
+              0.771024950005873E+01
+             -0.168207817450502E+02
+              0.124554592311685E+02
+             -0.200489016599201E+02
+              0.151264382009102E+02
+             -0.159867956895936E+02
+              0.259164025640377E+02
+              0.142391139108490E+02
+              0.163889134817523E+02
+              0.406934586685696E+01
+              0.478455491795938E+01
+             -0.358022309651228E+02
+              0.580704354474505E+01
+              0.131348336258910E+01
+              0.341506410106007E+01
+             -0.584512346436129E+01
+              0.276793150001439E+02
+             -0.642692622589374E+01
+             -0.114413003962705E+02
+             -0.267851873876067E+02
+             -0.929488217855754E+01
+             -0.128519510150051E+02
+             -0.111726180168675E+02
+             -0.252030797474238E+01
+             -0.611710105219601E+01
+             -0.777891358183467E+01
+             -0.119195789443684E+02
+              0.912229753214521E+01
+              0.287599748687272E+02
+              0.242967528563450E+02
+             -0.431135115417783E+01
+             -0.292089576325426E+02
+             -0.124534612876798E+02
+              0.597039003370327E+01
+              0.597776730961764E+01
+              0.954889290320295E+01
+              0.671113311904250E+01
+              0.118698062772762E+01
+              0.285391527405717E+02
+             -0.693748241543410E+01
+              0.140208506984794E+02
+              0.721387565632403E+01
+             -0.971987559984044E+01
+             -0.465805185243325E+01
+              0.129295186543621E+02
+             -0.690908868381459E+01
+             -0.424244977856343E+01
+             -0.314486414088631E+01
+              0.166496186677492E+02
+             -0.219008213058014E+02
+             -0.175945040255684E+01
+             -0.169011318848648E+02
+             -0.359110432924032E+02
+             -0.960335343066419E-01
+             -0.529977346216713E+01
+              0.139565333718078E+02
+              0.155173988882509E+02
+              0.212205302011143E+02
+             -0.138012953026047E+02
+              0.214582098016564E+02
+              0.536309068900501E+01
+             -0.796652355003705E+01
+              0.286379090426534E+01
+             -0.677492291705697E+01
+             -0.400561275351112E+01
+              0.123929335482263E+02
+             -0.102638210379625E+02
+              0.275310155813547E+02
+             -0.734097776442968E+01
+             -0.152165309396969E+02
+              0.287918729871815E+02
+             -0.155837034631462E+02
+             -0.125444209887004E+01
+              0.151525712099411E+01
+              0.830778696183262E+01
+             -0.121630029932593E+02
+             -0.926721541851332E+01
+              0.147883931953252E+02
+             -0.222463522868111E+02
+              0.183469304701784E+02
+              0.271165312098579E+01
+              0.131467891705653E+02
+              0.190480547155405E+02
+              0.488069789956817E+01
+             -0.264722818596943E+02
+             -0.114547422124703E+02
+             -0.191090351916911E+02
+             -0.113685075917788E+02
+             -0.302792829749626E+01
+              0.410079017921497E+01
+             -0.891404732759588E+01
+             -0.154201179794001E+00
+             -0.265781086688003E+02
+              0.148712630430452E+01
+             -0.171412028997775E+02
+              0.166152098018534E+02
+             -0.973912721241430E+01
+             -0.234761558228140E+01
+              0.125419931002290E+02
+              0.248119946694961E+01
+              0.116555066073789E+02
+             -0.222209193275924E+02
+              0.369098614054838E+01
+              0.151983227361897E+01
+              0.956572156785347E+01
+              0.153324465946895E+02
+             -0.283323600733452E+01
+             -0.174539845144920E+02
+             -0.100947854482527E+02
+             -0.712230441834782E+01
+             -0.209907521756969E+01
+              0.162786635038098E+02
+              0.105670310806197E+02
+             -0.107062454434353E+02
+             -0.100430053013663E+02
+              0.737524746838383E+01
+              0.803199992513753E+01
+             -0.216993125862097E+02
+              0.505956226209871E+01
+              0.155614862064731E+02
+             -0.692210339080315E+00
+              0.196039936764885E+02
+              0.905258776284742E+01
+              0.154255012989139E+02
+              0.234490342536549E+02
+              0.353465581957900E+01
+             -0.319535872999533E+02
+              0.440786471527398E+01
+              0.345460038274563E+02
+              0.251129178036387E+02
+             -0.173144964104617E+02
+              0.156283932456203E+01
+              0.224744684365268E+02
+              0.194770881155821E+02
+              0.856200161394443E+01
+             -0.517991650284162E+01
+              0.859855599134346E+01
+              0.178040232032364E+02
+             -0.823030038837538E+01
+             -0.529715276579000E+01
+              0.120575765897468E+02
+             -0.725987514371013E+00
+              0.108255175623618E+02
+             -0.334990665939724E+01
+              0.225749425557430E+02
+             -0.861234966161277E+01
+              0.518087694835572E+01
+             -0.956699706883586E+01
+              0.111735378819432E+02
+             -0.151488864076158E+01
+              0.166477061843502E+02
+              0.118711504768450E+01
+              0.745356081575980E+01
+             -0.105862507032892E+02
+             -0.740525487213227E+01
+             -0.377613702788139E+01
+             -0.344029945456513E+01
+              0.181258146205859E+02
+              0.892160655252317E+01
+              0.219969992978549E+02
+              0.203010440686702E+02
+              0.569435608119525E+01
+              0.102233682185691E+01
+              0.216353275939735E+02
+              0.121607172915022E+02
+              0.198041288563502E-01
+              0.210726182196149E+02
+             -0.172951488868412E+02
+              0.606299157218680E+01
+             -0.112702411928491E+02
+             -0.305566710188079E+01
+              0.291369782300528E+02
+             -0.408068598466647E+01
+             -0.121533437911526E+01
+             -0.317108729910358E+01
+              0.239362220559796E+02
+             -0.513915035684803E+01
+             -0.440095535189528E+00
+              0.482925297201773E+02
+             -0.142929014585312E+02
+             -0.178414376056828E+02
+             -0.178572062577850E+02
+             -0.114063889964943E+02
+              0.104008654238587E+02
+             -0.466919595388242E+01
+              0.264676340433607E+01
+             -0.121026091347613E+01
+              0.612072134619353E+01
+              0.982949574471844E+01
+              0.114544495981238E+02
+              0.164863675070376E+02
+              0.105614789074229E+02
+              0.107663910015673E+02
+             -0.199258380156120E+02
+             -0.205778155717045E+02
+             -0.463940115269245E+01
+             -0.183945012101931E+02
+              0.292032182696252E+02
+              0.245991997906766E+02
+              0.116034664795499E+02
+              0.319846711424917E+02
+             -0.159823890546976E+02
+             -0.688448868897563E+01
+             -0.992416967701760E+01
+              0.276706328581071E+02
+ 
+ BEEF-vdW xc energy contributions
+            1 :    -250.1187829880315     
+            2 :     229.1812459310573     
+            3 :    -193.4908780972369     
+            4 :     152.5677061750046     
+            5 :    -115.3629134352026     
+            6 :     87.38104384386421     
+            7 :    -69.79032002851039     
+            8 :     60.24943846211113     
+            9 :    -54.67884667489687     
+           10 :     49.22195681316765     
+           11 :    -41.71927605070840     
+           12 :     32.17785857939023     
+           13 :    -22.16228148980605     
+           14 :     13.59123736810810     
+           15 :    -7.665733161263233     
+           16 :     4.418857370242620     
+           17 :    -2.928475533354685     
+           18 :     1.920716539321518     
+           19 :   -0.4168871688105469     
+           20 :    -1.858342525543947     
+           21 :     4.464516592727023     
+           22 :    -6.606341644916085     
+           23 :     7.653667128582981     
+           24 :    -7.520372805570901     
+           25 :     6.700373955581142     
+           26 :    -5.974402916748772     
+           27 :     5.980666421715512     
+           28 :    -6.887129116137771     
+           29 :     8.323490078154293     
+           30 :    -9.592538569377268     
+           31 :    -21.53172567371286     
+           32 :    -15.49032962933705     
+
+     Writing all to output data dir ./PbI2.save/
+ 
+     init_run     :      0.74s CPU      0.95s WALL (       1 calls)
+     electrons    :      1.30s CPU      2.44s WALL (       1 calls)
+     forces       :      0.14s CPU      0.15s WALL (       1 calls)
+     stress       :      0.36s CPU      0.37s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.17s CPU      0.31s WALL (       1 calls)
+     potinit      :      0.37s CPU      0.41s WALL (       1 calls)
+     hinit0       :      0.14s CPU      0.15s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      0.87s CPU      1.96s WALL (       2 calls)
+     sum_band     :      0.10s CPU      0.10s WALL (       2 calls)
+     v_of_rho     :      0.36s CPU      0.37s WALL (       2 calls)
+     v_h          :      0.00s CPU      0.00s WALL (       2 calls)
+     v_xc         :      4.78s CPU      4.86s WALL (      38 calls)
+     newd         :      0.02s CPU      0.03s WALL (       2 calls)
+     PAW_pot      :      0.10s CPU      0.12s WALL (       2 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       2 calls)
+     vdW_kernel   :      0.25s CPU      0.26s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.00s WALL (      12 calls)
+     init_us_2:cp :      0.00s CPU      0.00s WALL (      12 calls)
+     cegterg      :      0.66s CPU      0.67s WALL (       4 calls)
+
+     Called by sum_band:
+     sum_band:wei :      0.00s CPU      0.00s WALL (       2 calls)
+     sum_band:loo :      0.05s CPU      0.05s WALL (       2 calls)
+     sum_band:buf :      0.00s CPU      0.00s WALL (       4 calls)
+     sum_band:ini :      0.00s CPU      0.00s WALL (       4 calls)
+     sum_band:cal :      0.00s CPU      0.00s WALL (       4 calls)
+     sum_band:bec :      0.00s CPU      0.00s WALL (       4 calls)
+     addusdens    :      0.03s CPU      0.03s WALL (       2 calls)
+     addusd:skk   :      0.00s CPU      0.00s WALL (       4 calls)
+     addusd:dgemm :      0.01s CPU      0.01s WALL (       4 calls)
+     addusd:qvan2 :      0.01s CPU      0.01s WALL (       4 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.19s CPU      0.19s WALL (      27 calls)
+     cegterg:over :      0.03s CPU      0.04s WALL (      27 calls)
+     cegterg:upda :      0.01s CPU      0.01s WALL (      27 calls)
+     cegterg:last :      0.01s CPU      0.01s WALL (       6 calls)
+     h_psi        :      0.37s CPU      0.38s WALL (      31 calls)
+     s_psi        :      0.01s CPU      0.01s WALL (      31 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (      27 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.02s CPU      0.02s WALL (      31 calls)
+     vloc_psi     :      0.34s CPU      0.34s WALL (      31 calls)
+     add_vuspsi   :      0.01s CPU      0.01s WALL (      31 calls)
+
+     General routines
+     calbec       :      0.04s CPU      0.04s WALL (      45 calls)
+     fft          :      3.26s CPU      3.29s WALL (    2232 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       4 calls)
+     fftw         :      0.37s CPU      0.38s WALL (    1868 calls)
+     interpolate  :      0.00s CPU      0.00s WALL (       2 calls)
+ 
+     Parallel routines
+
+     PAW routines
+     PAW_pot      :      0.10s CPU      0.12s WALL (       2 calls)
+     PAW_symme    :      0.00s CPU      0.00s WALL (       3 calls)
+ 
+     PWSCF        :      7.63s CPU     10.82s WALL
+
+ 
+   This run was terminated on:  16:52: 9  20Feb2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

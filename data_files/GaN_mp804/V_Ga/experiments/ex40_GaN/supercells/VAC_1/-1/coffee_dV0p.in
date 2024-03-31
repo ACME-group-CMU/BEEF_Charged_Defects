@@ -1,0 +1,8 @@
+&dV_0p
+file_type = xsf
+file_pristine = /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_Ga/experiments/ex40_GaN/supercells/PRISTINE_0/0//espresso_plot_num_1.xsf
+file_neutral = /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_Ga/experiments/ex40_GaN/supercells/VAC_1/0//espresso_plot_num_1.xsf
+charge = -1
+plt_dir = a1
+factor = Ryd
+/

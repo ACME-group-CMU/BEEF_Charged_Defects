@@ -1,0 +1,128 @@
+
+ submitted Quantum Espresso job
+hostname
+trace15.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -8497.85383679082 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -407897.1987353943 eV!
+
+LOG | valid_supercell_output_found: True
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_cube_gen: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: VAC, {'Ga': 0, 'N': -1}
+VAC_Ga95 N96_[1.62227566 0.93661982 2.63968077] Ga
+VAC_Ga96 N95_[1.62227566 0.93661982 4.63162392] N
+New unique defect: VAC_Ga96 N95_[1.62227566 0.93661982 4.63162392] N
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: VAC_Ga96 N95_[1.62227566 0.93661982 4.63162392] N
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 0
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/VAC_1/0
+
+WARNING | Unable to change location to ./GaN.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[12.97819367  0.          0.        ]
+ [-6.48909683 11.23944541  0.        ]
+ [ 0.          0.         15.86466476]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Calculating Defect Formation Energy from VAC_1
+
+LOG | Epsilon value cannot be fetched from materials project.
+
+LOG | Epsilon manually set to 10.860179653335564.
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+
+LOG | Calculating DFE for VAC_1, charge = 0
+{0: -407500.26943168853}

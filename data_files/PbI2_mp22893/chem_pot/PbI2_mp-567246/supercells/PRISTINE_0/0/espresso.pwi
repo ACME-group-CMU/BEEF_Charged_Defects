@@ -1,0 +1,73 @@
+&CONTROL
+   calculation      = 'ensemble'
+   verbosity        = 'high'
+   restart_mode     = 'restart'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './'
+   prefix           = 'PbI2'
+   max_seconds      = 154800
+   pseudo_dir       = '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/'
+/
+&SYSTEM
+   ibrav            = 4
+   nat              = 21
+   ntyp             = 2
+   tot_charge       = 0
+   ecutwfc          = 70
+   ecutrho          = 350
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+   input_dft        = 'BEEF-vdW'
+   celldm(1)        = 8.907457277653611
+   celldm(3)        = 11.006870455456184
+/
+&ELECTRONS
+   electron_maxstep = 100
+   scf_must_converge = .true.
+   conv_thr         = 1e-07
+   mixing_mode      = 'plain'
+   mixing_beta      = 0.7
+   mixing_ndim      = 8
+   diagonalization  = 'david'
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+/
+
+ATOMIC_SPECIES
+Pb 207.2 Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
+I 126.90447 I.pbe-dn-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+4 4 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Pb -0.0000023569 2.7214132730 9.3760762911 
+Pb -0.0000023569 2.7214132730 24.2164741763 
+Pb 0.0000000000 0.0000000000 46.4182523551 
+Pb -0.0000023569 2.7214132730 38.9944559912 
+Pb -0.0000023569 2.7214132730 31.5979014859 
+Pb -0.0000023569 2.7214132730 16.8087286506 
+Pb -0.0000023569 2.7214132730 1.9795439745 
+I 2.3568140460 1.3607045954 48.2982244476 
+I 0.0000000000 0.0000000000 22.3333413545 
+I 2.3568140460 1.3607045954 3.8693425181 
+I 2.3568140460 1.3607045954 40.8839039312 
+I 0.0000000000 0.0000000000 7.4866185531 
+I 2.3568140460 1.3607045954 18.6940067566 
+I -0.0000023569 2.7214132730 44.5310418229 
+I 0.0000000000 0.0000000000 0.0887859962 
+I 2.3568140460 1.3607045954 33.4848435530 
+I 0.0000000000 0.0000000000 29.7187492633 
+I 0.0000000000 0.0000000000 14.9309962306 
+I 2.3568140460 1.3607045954 11.2622278452 
+I 2.3568140460 1.3607045954 26.1041683740 
+I 0.0000000000 0.0000000000 37.1090308470 
+

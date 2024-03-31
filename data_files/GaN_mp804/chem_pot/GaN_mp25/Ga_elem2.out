@@ -1,0 +1,64 @@
+
+ submitted Quantum Espresso job
+hostname
+trace10.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25/supercells
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/chem_pot/GaN_mp25/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -3147.8085191660734 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: True
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: False
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[5.5977645 0.        0.       ]
+ [0.        5.5977645 0.       ]
+ [0.        0.        5.5977645]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | DFT Calculation of Pristine Supercell: True

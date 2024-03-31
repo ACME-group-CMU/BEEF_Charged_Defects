@@ -1,0 +1,73 @@
+&CONTROL
+   calculation      = 'vc-relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './'
+   prefix           = 'PbI2'
+   max_seconds      = 154800
+   pseudo_dir       = '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/'
+/
+&SYSTEM
+   ibrav            = 4
+   nat              = 21
+   ntyp             = 2
+   tot_charge       = 0
+   ecutwfc          = 70
+   ecutrho          = 350
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+   input_dft        = 'BEEF-vdW'
+   celldm(1)        = 8.747735062896576
+   celldm(3)        = 11.004666810086851
+/
+&ELECTRONS
+   electron_maxstep = 100
+   scf_must_converge = .true.
+   conv_thr         = 1e-07
+   mixing_mode      = 'plain'
+   mixing_beta      = 0.7
+   mixing_ndim      = 8
+   diagonalization  = 'david'
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+/
+
+ATOMIC_SPECIES
+Pb 207.2 Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
+I 126.90447 I.pbe-dn-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+4 4 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Pb -0.0000023146 2.6726148163 9.2076801808 
+Pb -0.0000023146 2.6726148163 23.7760931168 
+Pb 0.0000000000 0.0000000000 45.5776554124 
+Pb -0.0000023146 2.6726148163 38.2843948168 
+Pb -0.0000023146 2.6726148163 31.0186142256 
+Pb -0.0000023146 2.6726148163 16.5067257187 
+Pb -0.0000023146 2.6726148163 1.9506014551 
+I 2.3145533246 1.3363054037 47.4502380868 
+I 0.0000000000 0.0000000000 21.9173100463 
+I 2.3145533246 1.3363054037 3.8170237467 
+I 2.3145533246 1.3363054037 40.1456159583 
+I 0.0000000000 0.0000000000 7.3448136216 
+I 2.3145533246 1.3363054037 18.3685576514 
+I -0.0000023146 2.6726148163 43.7050666249 
+I 0.0000000000 0.0000000000 0.0844236838 
+I 2.3145533246 1.3363054037 32.8838230853 
+I 0.0000000000 0.0000000000 29.1568403664 
+I 0.0000000000 0.0000000000 14.6442203363 
+I 2.3145533246 1.3363054037 11.0692141044 
+I 2.3145533246 1.3363054037 25.6386509691 
+I 0.0000000000 0.0000000000 36.4267890096 
+

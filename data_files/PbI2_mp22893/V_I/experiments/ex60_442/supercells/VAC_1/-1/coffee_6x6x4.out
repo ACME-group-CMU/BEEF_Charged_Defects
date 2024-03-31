@@ -1,0 +1,33 @@
+########################################################
+CoFFEE: Corrections For Formation Energies and 
+        Eigenvalues for charged defect simulations
+########################################################
+Running on 1 processor(s)
+CELL PARAMETERS:
+Cell dimensions (bohr): 53.418, 53.418,55.767 
+Lattice vectors (normalized):
+a1: 1.000, -0.000, 0.000
+a2: -0.500, 0.866, -0.000
+a3: 0.000, -0.000, 0.783
+Plane-wave energy cut-off (Ry): 140.000 
+
+GAUSSIAN_PARAMETERS:
+Total charge: -1
+Center of the gaussian (in crystal units):
+0.16666304168771748 0.08332239037695655 0.3715670234926404
+Gaussian width (bohr):
+2.788897
+
+
+DIELECTRIC PARAMETERS
+Profile: Bulk
+epsilon tensor:
+[[17.  0.  0.]
+ [ 0. 17.  0.]
+ [ 0.  0. 17.]]
+
+
+Grid: 177, 177, 167
+Volume: 107903.929
+!  Total Energy (eV): 0.0782
+Execution time: 23.44 s

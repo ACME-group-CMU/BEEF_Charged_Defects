@@ -1,0 +1,417 @@
+
+ submitted Quantum Espresso job
+hostname
+trace02.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/chem_pot/C_mp48/supercells/PRISTINE_0/0
+
+WARNING | Unable to change location to ./unitcell
+
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the unitcell has not been found.
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/V_C/chem_pot/C_mp48/supercells/PRISTINE_0/0
+
+WARNING | Unable to change location to ./GaN.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: True
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Unitcell Matrix: 
+[[ 2.467291  0.        0.      ]
+ [-1.233646  2.136737  0.      ]
+ [ 0.        0.        7.803073]]
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[ 2.46512018  0.          0.        ]
+ [-1.23256009  2.1348567   0.        ]
+ [ 0.          0.          7.44007415]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Attempting to delete files.
+
+LOG | Deleted file: wfc1.dat
+
+LOG | Deleted file: wfc10.dat
+
+LOG | Deleted file: wfc11.dat
+
+LOG | Deleted file: wfc12.dat
+
+LOG | Deleted file: wfc13.dat
+
+LOG | Deleted file: wfc14.dat
+
+LOG | Deleted file: wfc15.dat
+
+LOG | Deleted file: wfc16.dat
+
+LOG | Deleted file: wfc17.dat
+
+LOG | Deleted file: wfc18.dat
+
+LOG | Deleted file: wfc19.dat
+
+LOG | Deleted file: wfc2.dat
+
+LOG | Deleted file: wfc20.dat
+
+LOG | Deleted file: wfc21.dat
+
+LOG | Deleted file: wfc22.dat
+
+LOG | Deleted file: wfc23.dat
+
+LOG | Deleted file: wfc24.dat
+
+LOG | Deleted file: wfc25.dat
+
+LOG | Deleted file: wfc26.dat
+
+LOG | Deleted file: wfc27.dat
+
+LOG | Deleted file: wfc28.dat
+
+LOG | Deleted file: wfc29.dat
+
+LOG | Deleted file: wfc3.dat
+
+LOG | Deleted file: wfc30.dat
+
+LOG | Deleted file: wfc31.dat
+
+LOG | Deleted file: wfc32.dat
+
+LOG | Deleted file: wfc33.dat
+
+LOG | Deleted file: wfc34.dat
+
+LOG | Deleted file: wfc35.dat
+
+LOG | Deleted file: wfc36.dat
+
+LOG | Deleted file: wfc37.dat
+
+LOG | Deleted file: wfc38.dat
+
+LOG | Deleted file: wfc39.dat
+
+LOG | Deleted file: wfc4.dat
+
+LOG | Deleted file: wfc40.dat
+
+LOG | Deleted file: wfc41.dat
+
+LOG | Deleted file: wfc42.dat
+
+LOG | Deleted file: wfc43.dat
+
+LOG | Deleted file: wfc44.dat
+
+LOG | Deleted file: wfc45.dat
+
+LOG | Deleted file: wfc46.dat
+
+LOG | Deleted file: wfc47.dat
+
+LOG | Deleted file: wfc48.dat
+
+LOG | Deleted file: wfc49.dat
+
+LOG | Deleted file: wfc5.dat
+
+LOG | Deleted file: wfc50.dat
+
+LOG | Deleted file: wfc51.dat
+
+LOG | Deleted file: wfc52.dat
+
+LOG | Deleted file: wfc53.dat
+
+LOG | Deleted file: wfc54.dat
+
+LOG | Deleted file: wfc55.dat
+
+LOG | Deleted file: wfc56.dat
+
+LOG | Deleted file: wfc57.dat
+
+LOG | Deleted file: wfc58.dat
+
+LOG | Deleted file: wfc59.dat
+
+LOG | Deleted file: wfc6.dat
+
+LOG | Deleted file: wfc60.dat
+
+LOG | Deleted file: wfc61.dat
+
+LOG | Deleted file: wfc62.dat
+
+LOG | Deleted file: wfc63.dat
+
+LOG | Deleted file: wfc64.dat
+
+LOG | Deleted file: wfc65.dat
+
+LOG | Deleted file: wfc66.dat
+
+LOG | Deleted file: wfc67.dat
+
+LOG | Deleted file: wfc68.dat
+
+LOG | Deleted file: wfc69.dat
+
+LOG | Deleted file: wfc7.dat
+
+LOG | Deleted file: wfc70.dat
+
+LOG | Deleted file: wfc71.dat
+
+LOG | Deleted file: wfc72.dat
+
+LOG | Deleted file: wfc73.dat
+
+LOG | Deleted file: wfc74.dat
+
+LOG | Deleted file: wfc75.dat
+
+LOG | Deleted file: wfc76.dat
+
+LOG | Deleted file: wfc77.dat
+
+LOG | Deleted file: wfc78.dat
+
+LOG | Deleted file: wfc79.dat
+
+LOG | Deleted file: wfc8.dat
+
+LOG | Deleted file: wfc80.dat
+
+LOG | Deleted file: wfc81.dat
+
+LOG | Deleted file: wfc82.dat
+
+LOG | Deleted file: wfc83.dat
+
+LOG | Deleted file: wfc84.dat
+
+LOG | Deleted file: wfc9.dat
+
+LOG | Attempting to delete files.
+
+LOG | Deleted file: wfc1.dat
+
+LOG | Deleted file: wfc10.dat
+
+LOG | Deleted file: wfc11.dat
+
+LOG | Deleted file: wfc12.dat
+
+LOG | Deleted file: wfc13.dat
+
+LOG | Deleted file: wfc14.dat
+
+LOG | Deleted file: wfc15.dat
+
+LOG | Deleted file: wfc16.dat
+
+LOG | Deleted file: wfc17.dat
+
+LOG | Deleted file: wfc18.dat
+
+LOG | Deleted file: wfc19.dat
+
+LOG | Deleted file: wfc2.dat
+
+LOG | Deleted file: wfc20.dat
+
+LOG | Deleted file: wfc21.dat
+
+LOG | Deleted file: wfc22.dat
+
+LOG | Deleted file: wfc23.dat
+
+LOG | Deleted file: wfc24.dat
+
+LOG | Deleted file: wfc25.dat
+
+LOG | Deleted file: wfc26.dat
+
+LOG | Deleted file: wfc27.dat
+
+LOG | Deleted file: wfc28.dat
+
+LOG | Deleted file: wfc29.dat
+
+LOG | Deleted file: wfc3.dat
+
+LOG | Deleted file: wfc30.dat
+
+LOG | Deleted file: wfc31.dat
+
+LOG | Deleted file: wfc32.dat
+
+LOG | Deleted file: wfc33.dat
+
+LOG | Deleted file: wfc34.dat
+
+LOG | Deleted file: wfc35.dat
+
+LOG | Deleted file: wfc36.dat
+
+LOG | Deleted file: wfc37.dat
+
+LOG | Deleted file: wfc38.dat
+
+LOG | Deleted file: wfc39.dat
+
+LOG | Deleted file: wfc4.dat
+
+LOG | Deleted file: wfc40.dat
+
+LOG | Deleted file: wfc41.dat
+
+LOG | Deleted file: wfc42.dat
+
+LOG | Deleted file: wfc43.dat
+
+LOG | Deleted file: wfc44.dat
+
+LOG | Deleted file: wfc45.dat
+
+LOG | Deleted file: wfc46.dat
+
+LOG | Deleted file: wfc47.dat
+
+LOG | Deleted file: wfc48.dat
+
+LOG | Deleted file: wfc49.dat
+
+LOG | Deleted file: wfc5.dat
+
+LOG | Deleted file: wfc50.dat
+
+LOG | Deleted file: wfc51.dat
+
+LOG | Deleted file: wfc52.dat
+
+LOG | Deleted file: wfc53.dat
+
+LOG | Deleted file: wfc54.dat
+
+LOG | Deleted file: wfc55.dat
+
+LOG | Deleted file: wfc56.dat
+
+LOG | Deleted file: wfc57.dat
+
+LOG | Deleted file: wfc58.dat
+
+LOG | Deleted file: wfc59.dat
+
+LOG | Deleted file: wfc6.dat
+
+LOG | Deleted file: wfc60.dat
+
+LOG | Deleted file: wfc61.dat
+
+LOG | Deleted file: wfc62.dat
+
+LOG | Deleted file: wfc63.dat
+
+LOG | Deleted file: wfc64.dat
+
+LOG | Deleted file: wfc65.dat
+
+LOG | Deleted file: wfc66.dat
+
+LOG | Deleted file: wfc67.dat
+
+LOG | Deleted file: wfc68.dat
+
+LOG | Deleted file: wfc69.dat
+
+LOG | Deleted file: wfc7.dat
+
+LOG | Deleted file: wfc70.dat
+
+LOG | Deleted file: wfc71.dat
+
+LOG | Deleted file: wfc72.dat
+
+LOG | Deleted file: wfc73.dat
+
+LOG | Deleted file: wfc74.dat
+
+LOG | Deleted file: wfc75.dat
+
+LOG | Deleted file: wfc76.dat
+
+LOG | Deleted file: wfc77.dat
+
+LOG | Deleted file: wfc78.dat
+
+LOG | Deleted file: wfc79.dat
+
+LOG | Deleted file: wfc8.dat
+
+LOG | Deleted file: wfc80.dat
+
+LOG | Deleted file: wfc81.dat
+
+LOG | Deleted file: wfc82.dat
+
+LOG | Deleted file: wfc83.dat
+
+LOG | Deleted file: wfc84.dat
+
+LOG | Deleted file: wfc9.dat
+
+LOG | DFT Calculation of Pristine Supercell: True

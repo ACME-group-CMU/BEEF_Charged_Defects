@@ -1,0 +1,171 @@
+
+ submitted Quantum Espresso job
+hostname
+trace15.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -27532.949713956205 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/PRISTINE_0/0
+
+WARNING | Unable to change location to ./PbI2.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[ 1.88450761e+01 -7.25858919e-05  2.45434045e-04]
+ [-9.42260089e+00  1.63202396e+01 -3.10768728e-04]
+ [ 1.92498376e-04 -1.70301927e-04  1.47554250e+01]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: VAC, {'I': 0, 'Pb': -1}
+VAC_Pb31 I64_[ 2.35579468  4.07971885 14.75536469] Pb
+VAC_Pb32 I63_[2.3557356  1.359766   5.48264436] I
+New unique defect: VAC_Pb31 I64_[ 2.35579468  4.07971885 14.75536469] Pb
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: VAC_Pb31 I64_[ 2.35579468  4.07971885 14.75536469] Pb
+Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442
+Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 0
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/VAC_1/0
+
+WARNING | Unable to change location to ./PbI2.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[ 1.88450761e+01 -7.25858919e-05  2.45434045e-04]
+ [-9.42260089e+00  1.63202396e+01 -3.10768728e-04]
+ [ 1.92498376e-04 -1.70301927e-04  1.47554250e+01]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Running DFT for defect: VAC, num: 1, charge: -1
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_Pb/experiments/ex48_442/supercells/VAC_1/-1
+
+WARNING | Unable to change location to ./PbI2.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[ 1.88450761e+01 -7.25858919e-05  2.45434045e-04]
+ [-9.42260089e+00  1.63202396e+01 -3.10768728e-04]
+ [ 1.92498376e-04 -1.70301927e-04  1.47554250e+01]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Calculating Defect Formation Energy from VAC_1

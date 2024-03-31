@@ -1,0 +1,114 @@
+##################################################################
+Log of Defect Tracking Run
+Date and time: 2024-03-28 06:23:02.047424
+##################################################################
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+LOG | Calculate Pristine Energy
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+LOG | Searching for espresso.pwo
+LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/V_N/experiments/ex69_222/supercells/PRISTINE_0/0/unitcell
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -8497.85383679082 eV!
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_file_found__supercell_output: False
+LOG | valid_file_found__wfcs: True
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[ 6.48909683  0.          0.        ]
+ [-3.24454842  5.61972271  0.        ]
+ [ 0.          0.         10.57644318]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | DFT Calculation of Pristine Supercell: True
+LOG | 
+Adding Defect: VAC, {'Ga': 0, 'N': -1}
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Calculating Defect Energy
+LOG | Calculating Defect Energy of defect: VAC_Ga16 N15_[1.62227566 0.93661982 4.63162392] N
+LOG | Running DFT for defect: VAC, num: 1, charge: 0
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_file_found__supercell_output: False
+LOG | valid_file_found__wfcs: True
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[ 6.48909683  0.          0.        ]
+ [-3.24454842  5.61972271  0.        ]
+ [ 0.          0.         10.57644318]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | Running DFT for defect: VAC, num: 1, charge: 1
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_file_found__supercell_output: False
+LOG | valid_file_found__wfcs: True
+LOG | valid_file_found__pp_requiring_wfcs: False
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_that_requires_wfc: True
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[ 6.48909683  0.          0.        ]
+ [-3.24454842  5.61972271  0.        ]
+ [ 0.          0.         10.57644318]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_7.ppi', '>', 'espresso_pn_7.ppo']
+LOG | Initial espresso.ppi job failed.
+LOG | Re-attempting espresso.ppi job.
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso_pn_7.ppi', '>', 'espresso_pn_7.ppo']
+LOG | Espresso.ppi job failed.
+LOG | Running DFT for defect: VAC, num: 1, charge: 2
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_file_found__supercell_output: False
+LOG | valid_file_found__wfcs: True
+LOG | valid_file_found__pp_requiring_wfcs: False
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_that_requires_wfc: True
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[ 6.48909683  0.          0.        ]
+ [-3.24454842  5.61972271  0.        ]
+ [ 0.          0.         10.57644318]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_7.ppi', '>', 'espresso_pn_7.ppo']
+LOG | Initial espresso.ppi job failed.
+LOG | Re-attempting espresso.ppi job.
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso_pn_7.ppi', '>', 'espresso_pn_7.ppo']
+LOG | Espresso.ppi job failed.
+LOG | Calculating Defect Formation Energy from VAC_1
+LOG | Epsilon value cannot be fetched from materials project.
+LOG | Epsilon manually set to 10.860179653335564.
+LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Calculating DFE for VAC_1, charge = 0
+LOG | Calculating DFE for VAC_1, charge = 1
+LOG | No manual sigma provided for charge 1
+LOG | Accepted sigma: 0 bohr

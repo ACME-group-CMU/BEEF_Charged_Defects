@@ -1,0 +1,58 @@
+&CONTROL
+   calculation      = 'ensemble'
+   verbosity        = 'high'
+   restart_mode     = 'restart'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './'
+   prefix           = 'PbI2'
+   max_seconds      = 154800
+   pseudo_dir       = '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/'
+/
+&SYSTEM
+   ibrav            = 1
+   nat              = 8
+   ntyp             = 1
+   tot_charge       = 0
+   ecutwfc          = 70
+   ecutrho          = 350
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+   input_dft        = 'BEEF-vdW'
+   celldm(1)        = 10.578241863926204
+/
+&ELECTRONS
+   electron_maxstep = 100
+   scf_must_converge = .true.
+   conv_thr         = 1e-07
+   mixing_mode      = 'plain'
+   mixing_beta      = 0.7
+   mixing_ndim      = 8
+   diagonalization  = 'david'
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+/
+
+ATOMIC_SPECIES
+N 14.007 N.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+3 3 3  0 0 0
+
+ATOMIC_POSITIONS angstrom
+N 0.3195324910 0.3195324910 0.3195324910 
+N 2.4793497590 5.2782320090 3.1184147411 
+N 3.1184147411 2.4793497590 5.2782320090 
+N 5.2782320090 3.1184147411 2.4793497590 
+N 5.2782320090 5.2782320090 5.2782320090 
+N 3.1184147411 0.3195324910 2.4793497590 
+N 2.4793497590 3.1184147411 0.3195324910 
+N 0.3195324910 2.4793497590 3.1184147411 
+
