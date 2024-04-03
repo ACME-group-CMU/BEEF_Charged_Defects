@@ -9,7 +9,7 @@ import subprocess
 import shutil
 
 #Defect Tracking
-from defect_tracker import Tracker
+from qe_defect_tracker import Tracker
 importlib.reload(Tracker)
 
 os.environ['ESPRESSO_PW_EXE'] = "pw.x"
