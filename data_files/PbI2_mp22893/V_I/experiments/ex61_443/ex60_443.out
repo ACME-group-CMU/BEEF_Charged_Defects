@@ -1,31 +1,31 @@
 
  submitted Quantum Espresso job
 hostname
-trace11.wec.local.cmu.edu
+11.wec.local.cmu.edu
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 
 LOG | Calculate Pristine Energy
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0
 
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0/unitcell
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -35,7 +35,7 @@ LOG | Total energy = -27532.949713956205 eV!
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/PRISTINE_0/0
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -68,14 +68,14 @@ LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Calculating Defect Energy
 
 LOG | Calculating Defect Energy of defect: VAC_Pb48 I95_[2.3557356  1.359766   5.48264436] I
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/VAC_1
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/VAC_1
 
 LOG | Running DFT for defect: VAC, num: 1, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/VAC_1/0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex61_443/supercells/VAC_1/0
 
 LOG | Searching for espresso.pwo
 
@@ -111,7 +111,7 @@ LOG | Epsilon value cannot be fetched from materials project.
 
 LOG | Epsilon manually set to 17.
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE-main/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
 
 LOG | Calculating DFE for VAC_1, charge = 0
 {0: -1313910.2834580634}

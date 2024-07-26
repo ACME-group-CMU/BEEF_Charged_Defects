@@ -12,12 +12,12 @@ import subprocess
 import shutil
 
 #Defect Tracking
-from qe_defect_tracker import Tracker
+from defect_tracker import Tracker
 importlib.reload(Tracker)
 
 os.environ['ESPRESSO_PW_EXE'] = "pw.x"
 os.environ['ESPRESSO_PP_EXE'] = "pp.x"
-os.environ['COFFEE_DIR'] = "/trace/home/atimmins/packages/coffee/CoFFEE_2.0/"
+os.environ['COFFEE_DIR'] = "//home//packages/coffee/CoFFEE_2.0/"
 
 #Define relevant details
 molecule_species_mpid = 'mp-22893'
@@ -41,7 +41,7 @@ input_data = {
     'control' : {
         'calculation': 'ensemble',
         'outdir':'./',
-        'pseudo_dir': '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
+        'pseudo_dir': '//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
         'prefix':'PbI2',
         'verbosity':'high',
         'restart_mode': 'restart',
@@ -86,11 +86,11 @@ comp_params = {
 
 """
 from mp_api.client import MPRester as MPRester_new
-with MPRester_new('API_KEY') as mp_new:
+with MPRester_new('API-KEY') as mp_new:
 	primitive_structure = mp_new.get_structure_by_material_id(molecule_species_mpid)
 """
 
-vc_relaxed_unitcell = "/trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0/unitcell/espresso.pwo"
+vc_relaxed_unitcell = "//group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0/unitcell/espresso.pwo"
 new_atoms_loc = ase_read(vc_relaxed_unitcell)
 primitive_structure = AseAtomsAdaptor.get_structure(atoms = new_atoms_loc)
 
@@ -106,7 +106,8 @@ correction_params = {
             1:1153,
             -2:1153,
             2:1153,
-	    3:1153,
+	    3:1154,
+	    -3:1153,
         },
 	'sigma_by_charge': {
         },
@@ -125,7 +126,7 @@ tracker.calculatePristineEnergy(input_data,pseudopotentials,kpts,compute_paramet
 
 defect = {'I':1,'Pb': -1}
 relevant_species = {}
-charge_list = [-2,-1,0,1,2] #add back 1,2,3
+charge_list = [-3,-2,-1,0,1,2,3] #add back 1,2,3
 tracker.addDefects("SUB", defect,charge_list)
 
 tracker.calculateDefectEnergy(force_recalc=force_recalc,correction_params=correction_params)

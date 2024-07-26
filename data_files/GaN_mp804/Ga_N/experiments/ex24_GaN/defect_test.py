@@ -9,12 +9,12 @@ import subprocess
 import shutil
 
 #Defect Tracking
-from qe_defect_tracker import Tracker
+from defect_tracker import Tracker
 importlib.reload(Tracker)
 
 os.environ['ESPRESSO_PW_EXE'] = "pw.x"
 os.environ['ESPRESSO_PP_EXE'] = "pp.x"
-os.environ['COFFEE_DIR'] = "/trace/home/atimmins/packages/coffee/CoFFEE_2.0/"
+os.environ['COFFEE_DIR'] = "//home//packages/coffee/CoFFEE_2.0/"
 
 #Define relevant details
 molecule_species_mpid = 'mp-804'
@@ -38,7 +38,7 @@ input_data = {
     'control' : {
         'calculation': 'ensemble',
         'outdir':'./',
-        'pseudo_dir': '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
+        'pseudo_dir': '//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
         'prefix':'GaN',
         'verbosity':'high',
         'restart_mode': 'restart',
@@ -81,14 +81,14 @@ comp_params = {
 
 """
 from mp_api.client import MPRester as MPRester_new
-with MPRester_new('API_KEY') as mp_new:
+with MPRester_new('API-KEY') as mp_new:
     primitive_structure = mp_new.get_structure_by_material_id(molecule_species_mpid)
 """
 
 from pymatgen.io.ase import AseAtomsAdaptor
 from ase.io import read as ase_read
 
-output_file = "/trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0/unitcell/espresso.pwo"
+output_file = "//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0/unitcell/espresso.pwo"
 new_atoms_loc = ase_read(output_file)
 primitive_structure = AseAtomsAdaptor.get_structure(atoms = new_atoms_loc)
 

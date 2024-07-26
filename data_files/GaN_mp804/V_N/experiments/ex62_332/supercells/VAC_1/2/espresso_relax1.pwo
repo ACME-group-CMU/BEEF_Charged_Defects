@@ -93,7 +93,7 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Ga read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Ga.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Ga.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: cd2a01e492f15b435d17032472d8505c
      Pseudo is Projector augmented-wave + core cor, Zval = 13.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1
@@ -109,7 +109,7 @@ Warning: card / ignored
 
 
      PseudoPot. # 2 for N  read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/N.pbe-n-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/N.pbe-n-kjpaw_psl.1.0.0.UPF
      MD5 check sum: f77f775694dac7e2c3fe1c82443d1a16
      Pseudo is Projector augmented-wave + core cor, Zval =  5.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1

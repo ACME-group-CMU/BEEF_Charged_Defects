@@ -5,18 +5,18 @@ Date and time: 2024-03-30 09:44:15.610852
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 LOG | Calculate Pristine Energy
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0/unitcell
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -27532.949713956205 eV!
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -881054.402196885 eV!
@@ -38,7 +38,7 @@ LOG | Calculating Defect Energy
 LOG | Calculating Defect Energy of defect: VAC_Pb32 I63_[2.3557356  1.359766   5.48264436] I
 LOG | Running DFT for defect: VAC, num: 1, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -873384.2060595322 eV!
@@ -54,7 +54,7 @@ LOG | Generating post processing (either cube or xsf) files.
 LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Running DFT for defect: VAC, num: 1, charge: 1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -873389.58354491 eV!
@@ -70,7 +70,7 @@ LOG | Generating post processing (either cube or xsf) files.
 LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Running DFT for defect: VAC, num: 1, charge: -1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -873379.2019127668 eV!
@@ -87,7 +87,7 @@ LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espres
 LOG | Calculating Defect Formation Energy from VAC_1
 LOG | Epsilon value cannot be fetched from materials project.
 LOG | Epsilon manually set to 17.
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Calculating DFE for VAC_1, charge = 0
 LOG | Calculating DFE for VAC_1, charge = 1
 LOG | No manual sigma provided for charge 1

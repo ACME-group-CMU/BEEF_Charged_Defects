@@ -5,7 +5,7 @@ import json
 molecule_species_mpid = 'mp-567503'
 primitive = True
 
-with MPRester('API_KEY') as mpr:
+with MPRester('API-KEY') as mpr:
     primitive_structure = mpr.get_structure_by_material_id(molecule_species_mpid)
 
 #conv_struct = SpacegroupAnalyzer(primitive_structure).get_conventional_standard_structure()

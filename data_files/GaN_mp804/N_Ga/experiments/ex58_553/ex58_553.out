@@ -1,0 +1,426 @@
+
+ submitted Quantum Espresso job
+hostname
+05.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {0: 1346, -1: 1346, 1: 1346, 2: 1346}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [192, 192, 180]}}
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -8497.85383679082 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -637339.4080018098 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: SUB, {'Ga': -1, 'N': 1}
+allowed_defect_composition: defaultdict(<class 'float'>, {'Ga': 150.0, 'N': 150.0})
+Ga149 N151
+New unique defect: SUB_Ga149 N151_[1.62227566 0.93661982 2.63968077] N
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: SUB_Ga149 N151_[1.62227566 0.93661982 2.63968077] N
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {0: 1346, -1: 1346, 1: 1346, 2: 1346}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [192, 192, 180]}}
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 0
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -633870.2301667826 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: True
+grid_size: [192, 192, 180]
+
+LOG | Generating post processing (either cube or xsf) files.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 1
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/1
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/1
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -633880.1214622799 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: True
+grid_size: [192, 192, 180]
+
+LOG | Generating post processing (either cube or xsf) files.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
+
+LOG | Running DFT for defect: SUB, num: 1, charge: -1
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/-1
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/-1
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -633859.4948071529 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 2
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/2
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/2
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -633889.61601749 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: True
+grid_size: [192, 192, 180]
+
+LOG | Generating post processing (either cube or xsf) files.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
+
+LOG | Calculating Defect Formation Energy from SUB_1
+
+LOG | Epsilon value cannot be fetched from materials project.
+
+LOG | Epsilon manually set to 10.860179653335564.
+Defect Loc: [0.1333334003269328, 0.06666662163763633, 0.16638742810466442]
+supercell_dimensions: [16.22274209 16.22274209 15.86466476]
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
+
+LOG | Calculating DFE for SUB_1, charge = 0
+{0: -633870.2301667826, 1: -633880.1214622799, -1: -633859.4948071529, 2: -633889.61601749}
+
+LOG | Calculating DFE for SUB_1, charge = 1
+{0: -633870.2301667826, 1: -633880.1214622799, -1: -633859.4948071529, 2: -633889.61601749}
+1
+//group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/1/
+
+LOG | No manual sigma provided for charge 1
+
+LOG | Sigma: 1.477183
+
+LOG | Accepted sigma: 1.477183 bohr
+made the input
+
+LOG | Coffee.py energy: 0.3433 eV
+made the input
+
+LOG | Coffee.py energy: 0.3665 eV
+made the input
+
+LOG | Coffee.py energy: 0.3823 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[75, 144, 245]
+[0.01333333 0.00694444 0.00408163]
+Computing fit
+[0.3433, 0.3665, 0.3823]
+L2: 0.07308450663028664
+L3: 0.058801929442234585
+L4: 0.049255762426301
+A
+B
+C
+D
+E_m_iso = 0.46605410759149973
+E_lattice = 0.12275410759149974
+Calculating potential alignment correction
+dV_0p.py output: charge: 1
+Shape of the data in the file: (192, 192, 180)
+
+Defect Coords: 2.1630333648638076
+Farthest coordinate from defect: 10.232033364863808
+dV0p @ far from defect = -0.042585499463656765
+
+LOG | dV0p @ far from defect = -0.042585499463656765
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (192, 192, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = 0.022302338398830536
+dVmD_vdiff @ far from defect = 0.0325239167794789
+
+LOG | dVmD_vdiff @ far from defect = 0.0325239167794789
+
+
+LOG | #################################################
+
+LOG | Charge: 1
+
+LOG | total_FNV_correction: 0.09039018650849133
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.12275410759149974, 'E_vq0m': 0.010221578380648362, 'E_vop': -0.042585499463656765, 'total': 0.09039018650849133}
+
+LOG | Calculating DFE for SUB_1, charge = -1
+{0: -633870.2301667826, 1: -633880.1214622799, -1: -633859.4948071529, 2: -633889.61601749}
+-1
+//group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/-1/
+
+LOG | No manual sigma provided for charge -1
+
+LOG | Sigma: 1.266808
+
+LOG | Accepted sigma: 1.266808 bohr
+made the input
+
+LOG | Coffee.py energy: 0.4195 eV
+made the input
+
+LOG | Coffee.py energy: 0.4428 eV
+made the input
+
+LOG | Coffee.py energy: 0.4588 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[75, 144, 245]
+[0.01333333 0.00694444 0.00408163]
+Computing fit
+[0.4195, 0.4428, 0.4588]
+L2: 0.07308450663028664
+L3: 0.058801929442234585
+L4: 0.049255762426301
+A
+B
+C
+D
+E_m_iso = 0.544597484831467
+E_lattice = 0.125097484831467
+Calculating potential alignment correction
+dV_0p.py output: charge: -1
+Shape of the data in the file: (192, 192, 180)
+
+Defect Coords: 2.1630333648638076
+Farthest coordinate from defect: 10.232033364863808
+dV0p @ far from defect = 0.042585499463656765
+
+LOG | dV0p @ far from defect = 0.042585499463656765
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (192, 192, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = -0.022415937706079653
+dVmD_vdiff @ far from defect = -0.011701795705440539
+
+LOG | dVmD_vdiff @ far from defect = -0.011701795705440539
+
+
+LOG | #################################################
+
+LOG | Charge: -1
+
+LOG | total_FNV_correction: 0.17839712629576288
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.125097484831467, 'E_vq0m': 0.010714142000639115, 'E_vop': 0.042585499463656765, 'total': 0.17839712629576288}
+
+LOG | Calculating DFE for SUB_1, charge = 2
+{0: -633870.2301667826, 1: -633880.1214622799, -1: -633859.4948071529, 2: -633889.61601749}
+2
+//group///testing/BEEF_Research/GaN_mp804/N_Ga/ex58_553/supercells/SUB_1/2/
+
+LOG | No manual sigma provided for charge 2
+
+LOG | Sigma: 1.413026
+
+LOG | Accepted sigma: 1.413026 bohr
+made the input
+
+LOG | Coffee.py energy: 1.4566 eV
+made the input
+
+LOG | Coffee.py energy: 1.5495 eV
+made the input
+
+LOG | Coffee.py energy: 1.6127 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[75, 144, 245]
+[0.01333333 0.00694444 0.00408163]
+Computing fit
+[1.4566, 1.5495, 1.6127]
+L2: 0.07308450663028664
+L3: 0.058801929442234585
+L4: 0.049255762426301
+A
+B
+C
+D
+E_m_iso = 1.9472087656969352
+E_lattice = 0.49060876569693534
+Calculating potential alignment correction
+dV_0p.py output: charge: 2
+Shape of the data in the file: (192, 192, 180)
+
+Defect Coords: 2.1630333648638076
+Farthest coordinate from defect: 10.232033364863808
+dV0p @ far from defect = -0.08517099892731353
+
+LOG | dV0p @ far from defect = -0.08517099892731353
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (192, 192, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = 0.044673326406397845
+dVmD_vdiff @ far from defect = 0.05912156564598191
+
+LOG | dVmD_vdiff @ far from defect = 0.05912156564598191
+
+
+LOG | #################################################
+
+LOG | Charge: 2
+
+LOG | total_FNV_correction: 0.4198860060092059
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.49060876569693534, 'E_vq0m': 0.014448239239584063, 'E_vop': -0.08517099892731353, 'total': 0.4198860060092059}

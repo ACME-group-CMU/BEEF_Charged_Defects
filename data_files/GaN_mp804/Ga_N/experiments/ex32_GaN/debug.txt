@@ -1,22 +1,22 @@
 ##################################################################
 Log of Defect Tracking Run
-Date and time: 2024-03-30 06:20:19.516909
+Date and time: 2024-04-23 13:48:31.923653
 ##################################################################
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 LOG | Calculate Pristine Energy
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0/unitcell
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -8497.85383679082 eV!
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -407897.1987349861 eV!
@@ -36,7 +36,7 @@ LOG | Calculating Defect Energy
 LOG | Calculating Defect Energy of defect: SUB_Ga97 N95_[1.62227566 0.93661982 4.63162392] Ga
 LOG | Running DFT for defect: SUB, num: 1, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -411352.32912012207 eV!
@@ -50,7 +50,7 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: 1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -411362.47299340455 eV!
@@ -62,9 +62,23 @@ LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Running DFT for defect: SUB, num: 1, charge: -1
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-1
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -411341.945522771 eV!
+LOG | valid_file_found__supercell_output: True
+LOG | valid_file_found__wfcs: False
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: False
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: 2
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -411372.3969518433 eV!
@@ -76,9 +90,23 @@ LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Running DFT for defect: SUB, num: 1, charge: -2
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-2
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -411331.2998516697 eV!
+LOG | valid_file_found__supercell_output: True
+LOG | valid_file_found__wfcs: False
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: False
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: 3
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -411382.2297971002 eV!
@@ -93,7 +121,7 @@ LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Calculating Defect Formation Energy from SUB_1
 LOG | Epsilon value cannot be fetched from materials project.
 LOG | Epsilon manually set to 10.860179653335564.
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Calculating DFE for SUB_1, charge = 0
 LOG | Calculating DFE for SUB_1, charge = 1
 LOG | No manual sigma provided for charge 1
@@ -109,6 +137,20 @@ LOG | #################################################
 LOG | Charge: 1
 LOG | total_FNV_correction: 0.19297338940781816
 LOG | #################################################
+LOG | Calculating DFE for SUB_1, charge = -1
+LOG | No manual sigma provided for charge -1
+LOG | Sigma: 2.038398
+LOG | Accepted sigma: 2.038398 bohr
+LOG | Coffee.py energy: 0.304 eV
+LOG | Coffee.py energy: 0.3455 eV
+LOG | Coffee.py energy: 0.3718 eV
+LOG | dV0p @ far from defect = 0.007445939873767093
+LOG | dVmD_model @ far from defect = -0.02159033531316331
+LOG | dVmD_vdiff @ far from defect = -0.033430541709972665
+LOG | #################################################
+LOG | Charge: -1
+LOG | total_FNV_correction: 0.1828895780242375
+LOG | #################################################
 LOG | Calculating DFE for SUB_1, charge = 2
 LOG | No manual sigma provided for charge 2
 LOG | Sigma: 2.073706
@@ -122,6 +164,20 @@ LOG | dVmD_vdiff @ far from defect = 0.06345805294438893
 LOG | #################################################
 LOG | Charge: 2
 LOG | total_FNV_correction: 0.7557314140053203
+LOG | #################################################
+LOG | Calculating DFE for SUB_1, charge = -2
+LOG | No manual sigma provided for charge -2
+LOG | Sigma: 2.097928
+LOG | Accepted sigma: 2.097928 bohr
+LOG | Coffee.py energy: 1.1623 eV
+LOG | Coffee.py energy: 1.3276 eV
+LOG | Coffee.py energy: 1.4327 eV
+LOG | dV0p @ far from defect = 0.014891879747534186
+LOG | dVmD_model @ far from defect = -0.04304828347991212
+LOG | dVmD_vdiff @ far from defect = -0.07104457437126596
+LOG | #################################################
+LOG | Charge: -2
+LOG | total_FNV_correction: 0.736853947596021
 LOG | #################################################
 LOG | Calculating DFE for SUB_1, charge = 3
 LOG | No manual sigma provided for charge 3

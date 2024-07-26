@@ -1,0 +1,144 @@
+
+ submitted Quantum Espresso job
+hostname
+12.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -8497.85383679082 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -407897.1987356664 eV!
+
+LOG | valid_supercell_output_found: True
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_cube_gen: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: SUB, {'Ga': 1, 'N': -1}
+Ga97 N95
+New unique defect: SUB_Ga97 N95_[1.62227566 0.93661982 4.63162392] Ga
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: SUB_Ga97 N95_[1.62227566 0.93661982 4.63162392] Ga
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/SUB_1
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 3
+Current working directory: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/Ga_N/experiments/ex16_ex32_GaN/supercells/SUB_1/3
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: True
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: False
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[12.97819367  0.          0.        ]
+ [-6.48909683 11.23944541  0.        ]
+ [ 0.          0.         15.86466476]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Calculating Defect Formation Energy from SUB_1
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Calculating DFE for SUB_1, charge = 3
+{3: -411381.86564942705}
+
+LOG | No manual sigma provided for charge 3
+
+LOG | Sigma: 2.445996
+
+LOG | Accepted sigma: 2.445996 bohr
+made the input
+
+LOG | Coffee.py energy: 2.0308 eV
+made the input
+
+LOG | Coffee.py energy: 2.3939 eV
+made the input
+
+LOG | Coffee.py energy: 2.6268 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[48, 100, 180]
+[0.02083333 0.01       0.00555556]
+Computing fit
+[2.0308, 2.3939, 2.6268]
+L2: 0.08480705747130937
+L3: 0.06640168100743545
+L4: 0.05458687581879251
+A
+B
+C
+D
+E_m_iso = 3.701762579832788
+E_lattice = 1.6709625798327878
+FNV_energy: {'E_lattice': 1.6709625798327878, 'E_pot_corr': 0}

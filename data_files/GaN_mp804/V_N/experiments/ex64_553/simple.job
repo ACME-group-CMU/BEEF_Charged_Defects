@@ -4,15 +4,16 @@
 #SBATCH --job-name=ex64_553
 #SBATCH -o %x.out
 #SBATCH -e %x.err
-#SBATCH --ntasks=180
-#SBATCH --mem=1800000
+#SBATCH --ntasks=1
+#SBATCH --mem=100000
 #SBATCH --time=48:00:00
-#SBATCH --mail-user=atimmins@andrew.cmu.edu
+#SBATCH --mail-user=(EMAIL)
 #SBATCH --mail-type=BEGIN,END,FAIL,REQUEUE
-#SBATCH --exclude=trace[20-24]
+#SBATCH --exclude=[20-24]
 
 #export OMP_NUM_THREADS=1
 
+#For q=-3 using, 2 nodes, mem=0, excluisve, 48hours
 
 echo -e '\n submitted Quantum Espresso job'
 echo 'hostname'
@@ -22,7 +23,7 @@ module load openmpi/4.0.5-nvhpc22.7
 module load quantumespresso/7.1-nvhpc22.7-cuda11.7
 #module load quantumespresso/7.2-nvhpc22.7-mkl
 
-source /trace/home/atimmins/.bashrc #Added to use the below condo environment
+source //home//.bashrc #Added to use the below condo environment
 conda activate defect_tracking 
 
 # run Quantum Espresso using Open MPI's mpirun

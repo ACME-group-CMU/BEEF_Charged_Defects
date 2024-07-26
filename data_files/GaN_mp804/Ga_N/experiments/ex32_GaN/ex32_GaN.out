@@ -1,32 +1,32 @@
 
  submitted Quantum Espresso job
 hostname
-trace12.wec.local.cmu.edu
+14.wec.local.cmu.edu
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 
 LOG | Calculate Pristine Energy
-correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {0: 867, 1: 867, 2: 867, 3: 867}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [160, 160, 180]}}
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {-2: 868, -1: 867, 0: 867, 1: 867, 2: 867, 3: 867}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [160, 160, 180]}}
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0
 
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0/unitcell
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -36,7 +36,7 @@ LOG | Total energy = -8497.85383679082 eV!
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/PRISTINE_0/0
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -73,19 +73,19 @@ LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Calculating Defect Energy
 
 LOG | Calculating Defect Energy of defect: SUB_Ga97 N95_[1.62227566 0.93661982 4.63162392] Ga
-correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {0: 867, 1: 867, 2: 867, 3: 867}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [160, 160, 180]}}
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1
+correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 648, 'defect_level': 'shallow', 'band_by_charge': {-2: 868, -1: 867, 0: 867, 1: 867, 2: 867, 3: 867}, 'sigma_by_charge': {}, 'epsilon': 10.860179653335564, 'grid_size': [160, 160, 180]}}
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1
 
 LOG | Running DFT for defect: SUB, num: 1, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/0
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -110,12 +110,12 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 
 LOG | Running DFT for defect: SUB, num: 1, charge: 1
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -139,13 +139,43 @@ LOG | run_pp_that_requires_wfc: False
 
 LOG | run_pp_that_doesnt_require_wfc: False
 
-LOG | Running DFT for defect: SUB, num: 1, charge: 2
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
+LOG | Running DFT for defect: SUB, num: 1, charge: -1
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-1
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-1
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -411341.945522771 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 2
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -169,13 +199,43 @@ LOG | run_pp_that_requires_wfc: False
 
 LOG | run_pp_that_doesnt_require_wfc: False
 
-LOG | Running DFT for defect: SUB, num: 1, charge: 3
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
+LOG | Running DFT for defect: SUB, num: 1, charge: -2
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-2
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-2
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -411331.2998516697 eV!
+
+LOG | valid_file_found__supercell_output: True
+
+LOG | valid_file_found__wfcs: False
+
+LOG | valid_file_found__pp_requiring_wfcs: True
+
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_that_requires_wfc: False
+
+LOG | run_pp_that_doesnt_require_wfc: False
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 3
+Current working directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN
+Failed to create path: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -207,15 +267,15 @@ LOG | Epsilon manually set to 10.860179653335564.
 Defect Loc: [0.16666675040866594, 0.08333327704704542, 0.29194590543941223]
 supercell_dimensions: [12.97819367 12.97819367 15.86466476]
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 
 LOG | Calculating DFE for SUB_1, charge = 0
-{0: -411352.32912012207, 1: -411362.47299340455, 2: -411372.3969518433, 3: -411382.2297971002}
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
 
 LOG | Calculating DFE for SUB_1, charge = 1
-{0: -411352.32912012207, 1: -411362.47299340455, 2: -411372.3969518433, 3: -411382.2297971002}
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
 1
-/trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1/
+//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/1/
 
 LOG | No manual sigma provided for charge 1
 
@@ -256,7 +316,7 @@ Farthest coordinate from defect: 8.611533364863806
 dV0p @ far from defect = -0.007445939873767093
 
 LOG | dV0p @ far from defect = -0.007445939873767093
-dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
   vol_a1[i] = Sum1/(a2_dim*a3_dim)
 dir: a1
 Shape of the data in the file: (160, 160, 180)
@@ -278,10 +338,76 @@ LOG | total_FNV_correction: 0.19297338940781816
 LOG | #################################################
 FNV_energy: {'E_lattice': 0.1875669635720944, 'E_vq0m': 0.012852365709490849, 'E_vop': -0.007445939873767093, 'total': 0.19297338940781816}
 
+LOG | Calculating DFE for SUB_1, charge = -1
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
+-1
+//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-1/
+
+LOG | No manual sigma provided for charge -1
+
+LOG | Sigma: 2.038398
+
+LOG | Accepted sigma: 2.038398 bohr
+made the input
+
+LOG | Coffee.py energy: 0.304 eV
+made the input
+
+LOG | Coffee.py energy: 0.3455 eV
+made the input
+
+LOG | Coffee.py energy: 0.3718 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[48, 100, 180]
+[0.02083333 0.01       0.00555556]
+Computing fit
+[0.304, 0.3455, 0.3718]
+L2: 0.08480705747130937
+L3: 0.06640168100743545
+L4: 0.05458687581879251
+A
+B
+C
+D
+E_m_iso = 0.49128384454727975
+E_lattice = 0.18728384454727975
+Calculating potential alignment correction
+dV_0p.py output: charge: -1
+Shape of the data in the file: (160, 160, 180)
+
+Defect Coords: 2.1630333648638067
+Farthest coordinate from defect: 8.611533364863806
+dV0p @ far from defect = 0.007445939873767093
+
+LOG | dV0p @ far from defect = 0.007445939873767093
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (160, 160, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = -0.02159033531316331
+dVmD_vdiff @ far from defect = -0.033430541709972665
+
+LOG | dVmD_vdiff @ far from defect = -0.033430541709972665
+
+
+LOG | #################################################
+
+LOG | Charge: -1
+
+LOG | total_FNV_correction: 0.1828895780242375
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.18728384454727975, 'E_vq0m': -0.011840206396809355, 'E_vop': 0.007445939873767093, 'total': 0.1828895780242375}
+
 LOG | Calculating DFE for SUB_1, charge = 2
-{0: -411352.32912012207, 1: -411362.47299340455, 2: -411372.3969518433, 3: -411382.2297971002}
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
 2
-/trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2/
+//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/2/
 
 LOG | No manual sigma provided for charge 2
 
@@ -322,7 +448,7 @@ Farthest coordinate from defect: 8.611533364863806
 dV0p @ far from defect = -0.014891879747534186
 
 LOG | dV0p @ far from defect = -0.014891879747534186
-dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
   vol_a1[i] = Sum1/(a2_dim*a3_dim)
 dir: a1
 Shape of the data in the file: (160, 160, 180)
@@ -344,10 +470,76 @@ LOG | total_FNV_correction: 0.7557314140053203
 LOG | #################################################
 FNV_energy: {'E_lattice': 0.7502678542883776, 'E_vq0m': 0.020355439464476807, 'E_vop': -0.014891879747534186, 'total': 0.7557314140053203}
 
+LOG | Calculating DFE for SUB_1, charge = -2
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
+-2
+//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/-2/
+
+LOG | No manual sigma provided for charge -2
+
+LOG | Sigma: 2.097928
+
+LOG | Accepted sigma: 2.097928 bohr
+made the input
+
+LOG | Coffee.py energy: 1.1623 eV
+made the input
+
+LOG | Coffee.py energy: 1.3276 eV
+made the input
+
+LOG | Coffee.py energy: 1.4327 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[48, 100, 180]
+[0.02083333 0.01       0.00555556]
+Computing fit
+[1.1623, 1.3276, 1.4327]
+L2: 0.08480705747130937
+L3: 0.06640168100743545
+L4: 0.05458687581879251
+A
+B
+C
+D
+E_m_iso = 1.9122583587398407
+E_lattice = 0.7499583587398406
+Calculating potential alignment correction
+dV_0p.py output: charge: -2
+Shape of the data in the file: (160, 160, 180)
+
+Defect Coords: 2.1630333648638067
+Farthest coordinate from defect: 8.611533364863806
+dV0p @ far from defect = 0.014891879747534186
+
+LOG | dV0p @ far from defect = 0.014891879747534186
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+  vol_a1[i] = Sum1/(a2_dim*a3_dim)
+dir: a1
+Shape of the data in the file: (160, 160, 180)
+The first column in the files is in bohr
+
+
+LOG | dVmD_model @ far from defect = -0.04304828347991212
+dVmD_vdiff @ far from defect = -0.07104457437126596
+
+LOG | dVmD_vdiff @ far from defect = -0.07104457437126596
+
+
+LOG | #################################################
+
+LOG | Charge: -2
+
+LOG | total_FNV_correction: 0.736853947596021
+
+LOG | #################################################
+FNV_energy: {'E_lattice': 0.7499583587398406, 'E_vq0m': -0.027996290891353845, 'E_vop': 0.014891879747534186, 'total': 0.736853947596021}
+
 LOG | Calculating DFE for SUB_1, charge = 3
-{0: -411352.32912012207, 1: -411362.47299340455, 2: -411372.3969518433, 3: -411382.2297971002}
+{0: -411352.32912012207, 1: -411362.47299340455, -1: -411341.945522771, 2: -411372.3969518433, -2: -411331.2998516697, 3: -411382.2297971002}
 3
-/trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3/
+//group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex32_GaN/supercells/SUB_1/3/
 
 LOG | No manual sigma provided for charge 3
 
@@ -388,7 +580,7 @@ Farthest coordinate from defect: 8.611533364863806
 dV0p @ far from defect = -0.022337819621301276
 
 LOG | dV0p @ far from defect = -0.022337819621301276
-dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
   vol_a1[i] = Sum1/(a2_dim*a3_dim)
 dir: a1
 Shape of the data in the file: (160, 160, 180)

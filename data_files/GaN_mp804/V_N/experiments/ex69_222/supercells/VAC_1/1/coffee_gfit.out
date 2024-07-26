@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/trace/home/atimmins/packages/coffee/CoFFEE_2.0//GaussianFit/g_fit.py", line 233, in <module>
-    step_l = np.sqrt(np.dot(step[2],step[2]))
-IndexError: list index out of range

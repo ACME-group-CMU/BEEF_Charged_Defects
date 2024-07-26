@@ -1,0 +1,32 @@
+##################################################################
+Log of Defect Tracking Run
+Date and time: 2024-02-16 13:35:54.473774
+##################################################################
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+LOG | Calculate Pristine Energy
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+LOG | Current working directory: /Users/andrewtimmins/Documents/CMU/Research/QE_ASE/dsProject/Testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex50_332/supercells/SUB_1/2/supercells/PRISTINE_0/0
+WARNING | Unable to change location to ./unitcell
+
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the unitcell has not been found.
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | Current working directory: /Users/andrewtimmins/Documents/CMU/Research/QE_ASE/dsProject/Testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex50_332/supercells/SUB_1/2/supercells/PRISTINE_0/0
+WARNING | Unable to change location to ./PbI2.save
+
+LOG | valid_supercell_output_found: False
+LOG | valid_wfc_files_found: False
+LOG | valid_cube_files_found: False
+LOG | run_pw_unitcell: True
+LOG | run_pw_supercell: True
+LOG | run_pp_cube_gen: True
+LOG | Unitcell Matrix: 
+[[ 4.71126902e+00 -1.81464730e-05  6.13585113e-05]
+ [-2.35565022e+00  4.08005990e+00 -7.76921821e-05]
+ [ 9.62491879e-05 -8.51509637e-05  7.37771250e+00]]

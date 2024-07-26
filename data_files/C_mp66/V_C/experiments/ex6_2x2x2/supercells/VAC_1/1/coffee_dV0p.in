@@ -1,0 +1,8 @@
+&dV_0p
+file_type = xsf
+file_pristine = //group///testing/BEEF_Research/V_C/experiments/ex6_2x2x2/supercells/PRISTINE_0/0//espresso_plot_num_1.xsf
+file_neutral = //group///testing/BEEF_Research/V_C/experiments/ex6_2x2x2/supercells/VAC_1/0//espresso_plot_num_1.xsf
+charge = 1
+plt_dir = a1
+factor = Ryd
+/

@@ -90,7 +90,7 @@
 
 
      PseudoPot. # 1 for Pb read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: 39ab5b8a6bbd56b7735ad9f188aac93a
      Pseudo is Projector augmented-wave + core cor, Zval = 14.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1
@@ -106,7 +106,7 @@
 
 
      PseudoPot. # 2 for I  read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: bfa8781bc1224d19af3f3980e3fab11e
      Pseudo is Projector augmented-wave + core cor, Zval = 17.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1
@@ -10305,7 +10305,7 @@ End final coordinates
 
 
      PseudoPot. # 1 for Pb read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/Pb.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: 39ab5b8a6bbd56b7735ad9f188aac93a
      Pseudo is Projector augmented-wave + core cor, Zval = 14.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1
@@ -10321,7 +10321,7 @@ End final coordinates
 
 
      PseudoPot. # 2 for I  read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: bfa8781bc1224d19af3f3980e3fab11e
      Pseudo is Projector augmented-wave + core cor, Zval = 17.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1

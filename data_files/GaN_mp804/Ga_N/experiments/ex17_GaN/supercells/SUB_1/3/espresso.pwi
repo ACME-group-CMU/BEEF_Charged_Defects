@@ -7,7 +7,7 @@
    outdir           = './'
    prefix           = 'GaN'
    max_seconds      = 154800
-   pseudo_dir       = '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/'
+   pseudo_dir       = '//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/'
 /
 &SYSTEM
    ibrav            = 4

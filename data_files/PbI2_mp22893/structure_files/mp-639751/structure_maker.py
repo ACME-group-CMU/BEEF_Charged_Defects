@@ -5,7 +5,7 @@ import json
 molecule_species_mpid = 'mp-639751'
 primitive = False
 
-with MPRester('API_KEY') as mpr:
+with MPRester('API-KEY') as mpr:
     primitive_structure = mpr.get_structure_by_material_id(molecule_species_mpid)
 
 if(primitive):

@@ -94,7 +94,7 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for I  read from file:
-     /trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
+     //group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/I.pbe-dn-kjpaw_psl.1.0.0.UPF
      MD5 check sum: bfa8781bc1224d19af3f3980e3fab11e
      Pseudo is Projector augmented-wave + core cor, Zval = 17.0
      Generated using 'atomic' code by A. Dal Corso  v.7.1

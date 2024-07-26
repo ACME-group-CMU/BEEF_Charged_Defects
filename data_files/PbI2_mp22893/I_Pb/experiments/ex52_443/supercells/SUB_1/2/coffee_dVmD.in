@@ -1,8 +1,8 @@
 &dV_mD
 file_type = xsf
-file_model = /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2//V_r.npy
-file_charged = /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2//espresso_plot_num_1.xsf
-file_neutral = /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/0//espresso_plot_num_1.xsf
+file_model = //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2//V_r.npy
+file_charged = //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2//espresso_plot_num_1.xsf
+file_neutral = //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/0//espresso_plot_num_1.xsf
 plt_dir = a1
 factor = Ryd
 /

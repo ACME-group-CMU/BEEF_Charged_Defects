@@ -1,5 +1,5 @@
 
-     Program POST-PROC v.7.1 starts on 26Mar2024 at 16:34:59 
+     Program POST-PROC v.7.1 starts on 27Jun2024 at 11:44:41 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,13 +10,13 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI & OpenMP), running on     128 processor cores
-     Number of MPI processes:               128
+     Parallel version (MPI & OpenMP), running on      20 processor cores
+     Number of MPI processes:                20
      Threads/MPI process:                     1
 
      MPI processes distributed on     1 nodes
-     R & G space division:  proc/nbgrp/npool/nimage =     128
-     1997997 MiB available memory on the printing compute node when the environment starts
+     R & G space division:  proc/nbgrp/npool/nimage =      20
+     2006210 MiB available memory on the printing compute node when the environment starts
  
 
      Reading xml data from directory:
@@ -41,8 +41,8 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         238     190     47                39674    28384    3543
-     Max         239     191     48                39685    28397    3554
+     Min        1529    1221    306               253953   181715   22716
+     Max        1530    1222    307               253956   181724   22721
      Sum       30589   24439   6121              5079105  3634441  454335
  
      Using Slab Decomposition
@@ -189,13 +189,13 @@
       98% done...
       99% done...
      100% done...
-     Min, Max charge:   -12.918541    1.565336
+     Min, Max charge:   -12.964411    1.779202
      Plot Type: 3D                     Output format: XCrySDen     
  
-     POST-PROC    :   1m40.96s CPU   1m43.00s WALL
+     POST-PROC    :   1m39.30s CPU   1m41.02s WALL
 
  
-   This run was terminated on:  16:36:42  26Mar2024            
+   This run was terminated on:  11:46:22  27Jun2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
@@ -207,333 +207,9 @@ Warning: ieee_underflow is signaling
 Warning: ieee_inexact is signaling
 FORTRAN STOP
 Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
-Warning: ieee_underflow is signaling
-Warning: ieee_inexact is signaling
-FORTRAN STOP
 Warning: ieee_underflow is signaling
 Warning: ieee_inexact is signaling
 FORTRAN STOP
-Warning: ieee_underflow is signaling
 Warning: ieee_inexact is signaling
 FORTRAN STOP
 Warning: ieee_underflow is signaling

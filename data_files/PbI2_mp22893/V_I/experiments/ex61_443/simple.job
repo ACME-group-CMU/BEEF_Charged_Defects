@@ -7,7 +7,7 @@
 #SBATCH --ntasks=125
 #SBATCH --mem=1000000
 #SBATCH --time=48:00:00
-#SBATCH --mail-user=atimmins@andrew.cmu.edu
+#SBATCH --mail-user=(EMAIL)
 #SBATCH --mail-type=BEGIN,END,FAIL,REQUEUE
 
 #export OMP_NUM_THREADS=1
@@ -20,7 +20,7 @@ hostname
 module load openmpi/4.0.5-nvhpc22.7
 module load quantumespresso/7.1-nvhpc22.7-cuda11.7
 
-source /trace/home/atimmins/.bashrc #Added to use the below condo environment
+source //home//.bashrc #Added to use the below condo environment
 conda activate defect_tracking 
 
 # run Quantum Espresso using Open MPI's mpirun

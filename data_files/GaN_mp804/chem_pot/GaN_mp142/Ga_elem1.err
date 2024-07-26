@@ -383,7 +383,7 @@ FORTRAN STOP
 Warning: ieee_underflow is signaling
 Warning: ieee_inexact is signaling
 FORTRAN STOP
-/trace/home/atimmins/.conda/envs/defect_tracking/lib/python3.8/site-packages/ase/io/espresso.py:1737: UserWarning: Input cell does not match requested ibrav[[4.71258704 0.         0.        ]
+//home//.conda/envs/defect_tracking/lib/python3.8/site-packages/ase/io/espresso.py:1737: UserWarning: Input cell does not match requested ibrav[[4.71258704 0.         0.        ]
  [0.         7.82051288 0.        ]
  [0.         0.         4.63598536]] != Cell([[4.712587036838474, 0.0, 0.0], [0.0, 7.8205128752288395, 2.9561751224624875e-06], [0.0, 1.7240661508814208e-06, 4.63598535949988]])
   warnings.warn('Input cell does not match requested ibrav'

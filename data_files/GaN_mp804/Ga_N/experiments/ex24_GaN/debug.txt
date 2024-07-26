@@ -1,33 +1,35 @@
 ##################################################################
 Log of Defect Tracking Run
-Date and time: 2024-03-29 17:02:10.806992
+Date and time: 2024-07-23 13:12:51.527921
 ##################################################################
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 LOG | Calculate Pristine Energy
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0/unitcell
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -8497.85383679082 eV!
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/PRISTINE_0/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -152961.36851133985 eV!
 LOG | valid_file_found__supercell_output: True
 LOG | valid_file_found__wfcs: False
 LOG | valid_file_found__pp_requiring_wfcs: True
-LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
 LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
-LOG | run_pp_that_doesnt_require_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Attempting to delete files.
 LOG | Attempting to delete files.
 LOG | DFT Calculation of Pristine Supercell: True
@@ -38,68 +40,76 @@ LOG | Calculating Defect Energy
 LOG | Calculating Defect Energy of defect: SUB_Ga37 N35_[1.62227566 0.93661982 4.63162392] Ga
 LOG | Running DFT for defect: SUB, num: 1, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/0
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -156416.63300014462 eV!
 LOG | valid_file_found__supercell_output: True
 LOG | valid_file_found__wfcs: False
 LOG | valid_file_found__pp_requiring_wfcs: True
-LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
 LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
-LOG | run_pp_that_doesnt_require_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Attempting to delete files.
 LOG | Running DFT for defect: SUB, num: 1, charge: 1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/1
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -156426.9534505663 eV!
 LOG | valid_file_found__supercell_output: True
 LOG | valid_file_found__wfcs: False
 LOG | valid_file_found__pp_requiring_wfcs: True
-LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
 LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
-LOG | run_pp_that_doesnt_require_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Attempting to delete files.
 LOG | Running DFT for defect: SUB, num: 1, charge: 2
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/2
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/2
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -156437.04761432088 eV!
 LOG | valid_file_found__supercell_output: True
 LOG | valid_file_found__wfcs: False
 LOG | valid_file_found__pp_requiring_wfcs: True
-LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
 LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
-LOG | run_pp_that_doesnt_require_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Attempting to delete files.
 LOG | Running DFT for defect: SUB, num: 1, charge: 3
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/3
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/Ga_N/experiments/ex24_GaN/supercells/SUB_1/3
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -156447.0218590333 eV!
 LOG | valid_file_found__supercell_output: True
 LOG | valid_file_found__wfcs: False
 LOG | valid_file_found__pp_requiring_wfcs: True
-LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
 LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
-LOG | run_pp_that_doesnt_require_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Attempting to delete files.
 LOG | Calculating Defect Formation Energy from SUB_1
 LOG | Epsilon value cannot be fetched from materials project.
 LOG | Epsilon manually set to 10.860179653335564.
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Calculating DFE for SUB_1, charge = 0
 LOG | Calculating DFE for SUB_1, charge = 1
 LOG | No manual sigma provided for charge 1
@@ -113,6 +123,7 @@ LOG | dVmD_model @ far from defect = 0.026400419646962946
 LOG | dVmD_vdiff @ far from defect = 0.04688315881006707
 LOG | #################################################
 LOG | Charge: 1
+LOG | image_charge_correction: 0.22095498155309268
 LOG | total_FNV_correction: 0.3507862655976912
 LOG | #################################################
 LOG | Calculating DFE for SUB_1, charge = 2
@@ -127,6 +138,7 @@ LOG | dVmD_model @ far from defect = 0.05293395455781807
 LOG | dVmD_vdiff @ far from defect = 0.10600242773698701
 LOG | #################################################
 LOG | Charge: 2
+LOG | image_charge_correction: 0.8836418613282738
 LOG | total_FNV_correction: 1.1554074242704315
 LOG | #################################################
 LOG | Calculating DFE for SUB_1, charge = 3
@@ -141,5 +153,6 @@ LOG | dVmD_model @ far from defect = 0.07959734420478101
 LOG | dVmD_vdiff @ far from defect = 0.15297839281008313
 LOG | #################################################
 LOG | Charge: 3
+LOG | image_charge_correction: 1.991601981102386
 LOG | total_FNV_correction: 2.393028666022957
 LOG | #################################################

@@ -1,0 +1,116 @@
+
+ submitted Quantum Espresso job
+hostname
+15.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -27532.949713956205 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -1321581.647984827 eV!
+
+LOG | valid_supercell_output_found: True
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_cube_gen: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: SUB, {'I': -1, 'Pb': 1}
+Pb49 I95
+New unique defect: SUB_Pb49 I95_[2.3557356  1.359766   5.48264436] Pb
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: SUB_Pb49 I95_[2.3557356  1.359766   5.48264436] Pb
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/SUB_1
+
+LOG | Running DFT for defect: SUB, num: 1, charge: 0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/Pb_I/ex55_443/supercells/SUB_1/0
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: False
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[ 1.88450761e+01 -7.25858919e-05  2.45434045e-04]
+ [-9.42260089e+00  1.63202396e+01 -3.10768728e-04]
+ [ 2.88747564e-04 -2.55452891e-04  2.21331375e+01]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Calculating Defect Formation Energy from SUB_1
+
+LOG | Epsilon value cannot be fetched from materials project.
+
+LOG | Epsilon manually set to 17.
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Calculating DFE for SUB_1, charge = 0
+{0: -1326104.3298435104}

@@ -30,4 +30,4 @@ epsilon tensor:
 Grid: 101, 101, 113
 Volume: 23862.349
 !  Total Energy (eV): 0.4824
-Execution time: 5.12 s
+Execution time: 5.28 s

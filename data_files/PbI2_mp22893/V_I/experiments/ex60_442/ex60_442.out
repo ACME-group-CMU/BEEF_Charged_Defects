@@ -1,13 +1,13 @@
 
  submitted Quantum Espresso job
 hostname
-trace03.wec.local.cmu.edu
+03.wec.local.cmu.edu
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 
@@ -15,18 +15,18 @@ LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 
 LOG | Calculate Pristine Energy
 correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 2368, 'defect_level': 'shallow', 'band_by_charge': {-2: 760, -1: 760, 0: 760, 1: 760}, 'sigma_by_charge': {}, 'epsilon': 17, 'grid_size': [216, 216, 180]}}
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0
 
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0/unitcell
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -36,7 +36,7 @@ LOG | Total energy = -27532.949713956205 eV!
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/PRISTINE_0/0
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -80,18 +80,18 @@ LOG | Calculating Defect Energy
 
 LOG | Calculating Defect Energy of defect: VAC_Pb32 I63_[2.3557356  1.359766   5.48264436] I
 correction_params: {'type': 'FNV', 'FNV': {'auto_select_bands': False, 'electrons_at_neutral': 2368, 'defect_level': 'shallow', 'band_by_charge': {-2: 760, -1: 760, 0: 760, 1: 760}, 'sigma_by_charge': {}, 'epsilon': 17, 'grid_size': [216, 216, 180]}}
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1
 
 LOG | Running DFT for defect: VAC, num: 1, charge: 0
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/0
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -121,12 +121,12 @@ LOG | Generating post processing (either cube or xsf) files.
 LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 
 LOG | Running DFT for defect: VAC, num: 1, charge: 1
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -156,12 +156,12 @@ LOG | Generating post processing (either cube or xsf) files.
 LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 
 LOG | Running DFT for defect: VAC, num: 1, charge: -1
-Current working directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
-Failed to create path: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
+Current working directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442
+Failed to create path: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
 
 LOG | Searching for espresso.pwo
 
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1
 
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 
@@ -198,7 +198,7 @@ LOG | Epsilon manually set to 17.
 Defect Loc: [0.16666304168771748, 0.08332239037695655, 0.3715670234926404]
 supercell_dimensions: [18.84507608 18.84504253 14.75542501]
 
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 
 LOG | Calculating DFE for VAC_1, charge = 0
 {0: -873384.2060595322, 1: -873389.58354491, -1: -873379.2019127668}
@@ -206,7 +206,7 @@ LOG | Calculating DFE for VAC_1, charge = 0
 LOG | Calculating DFE for VAC_1, charge = 1
 {0: -873384.2060595322, 1: -873389.58354491, -1: -873379.2019127668}
 1
-/trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1/
+//group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/1/
 
 LOG | No manual sigma provided for charge 1
 
@@ -247,7 +247,7 @@ Farthest coordinate from defect: 12.519777699682948
 dV0p @ far from defect = -0.0880952851837815
 
 LOG | dV0p @ far from defect = -0.0880952851837815
-dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
   vol_a1[i] = Sum1/(a2_dim*a3_dim)
 dir: a1
 Shape of the data in the file: (216, 216, 180)
@@ -272,7 +272,7 @@ FNV_energy: {'E_lattice': 0.035050177522965006, 'E_vq0m': -0.008259427770143395,
 LOG | Calculating DFE for VAC_1, charge = -1
 {0: -873384.2060595322, 1: -873389.58354491, -1: -873379.2019127668}
 -1
-/trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1/
+//group///testing/BEEF_Research/PbI2_mp22893/V_I/experiments/ex60_442/supercells/VAC_1/-1/
 
 LOG | No manual sigma provided for charge -1
 
@@ -313,7 +313,7 @@ Farthest coordinate from defect: 12.519777699682948
 dV0p @ far from defect = 0.0880952851837815
 
 LOG | dV0p @ far from defect = 0.0880952851837815
-dV_mD.py output: /trace/home/atimmins/packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
+dV_mD.py output: //home//packages/coffee/CoFFEE_2.0/PotentialAlignment/Utilities/plavg.py:88: ComplexWarning: Casting complex values to real discards the imaginary part
   vol_a1[i] = Sum1/(a2_dim*a3_dim)
 dir: a1
 Shape of the data in the file: (216, 216, 180)

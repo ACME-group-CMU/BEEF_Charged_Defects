@@ -8,9 +8,9 @@
 #SBATCH --exclusive
 #SBATCH --mem=0
 #SBATCH --time=48:00:00
-#SBATCH --mail-user=atimmins@andrew.cmu.edu
+#SBATCH --mail-user=(EMAIL)
 #SBATCH --mail-type=BEGIN,END,FAIL,REQUEUE
-#SBATCH --exclude=trace[20-24]
+#SBATCH --exclude=[20-24]
 
 #export OMP_NUM_THREADS=1
 

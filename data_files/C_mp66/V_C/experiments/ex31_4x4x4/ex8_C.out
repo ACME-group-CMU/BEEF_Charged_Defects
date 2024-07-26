@@ -1,0 +1,257 @@
+
+ submitted Quantum Espresso job
+hostname
+02.wec.local.cmu.edu
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+
+LOG | Calculate Pristine Energy
+Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells
+Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0
+
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0/unitcell
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -2067.280439058516 eV!
+
+LOG | Searching for espresso.pwo
+
+LOG | Current directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/PRISTINE_0/0
+
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+
+LOG | Job complete found!
+
+LOG | Total energy = -132305.9398848931 eV!
+
+LOG | valid_supercell_output_found: True
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: True
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: False
+
+LOG | run_pp_cube_gen: False
+
+LOG | DFT Calculation of Pristine Supercell: True
+
+LOG | 
+Adding Defect: VAC, {'C': -1}
+VAC_C511_[0.89309729 2.67920589 0.89309729] C
+New unique defect: VAC_C511_[0.89309729 2.67920589 0.89309729] C
+
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+
+LOG | Calculating Defect Energy
+
+LOG | Calculating Defect Energy of defect: VAC_C511_[0.89309729 2.67920589 0.89309729] C
+Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells
+Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4
+Failed to create path: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1
+
+LOG | Running DFT for defect: VAC, num: 1, charge: -1
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/-1
+
+WARNING | Unable to change location to ./diamond.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[14.2892127  0.         0.       ]
+ [ 0.        14.2892127  0.       ]
+ [ 0.         0.        14.2892127]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Running DFT for defect: VAC, num: 1, charge: 2
+
+LOG | Searching for espresso.pwo
+
+LOG | A valid espresso.pwo for the supercell has not been found.
+
+LOG | Current working directory: //group///testing/BEEF_Research/V_C/experiments/ex31_4x4x4/supercells/VAC_1/2
+
+WARNING | Unable to change location to ./diamond.save
+
+
+LOG | valid_supercell_output_found: False
+
+LOG | valid_wfc_files_found: False
+
+LOG | valid_cube_files_found: False
+
+LOG | run_pw_unitcell: False
+
+LOG | run_pw_supercell: True
+
+LOG | run_pp_cube_gen: True
+
+LOG | Starting DFT calculation
+
+LOG | Supercell Matrix: 
+[[14.2892127  0.         0.       ]
+ [ 0.        14.2892127  0.       ]
+ [ 0.         0.        14.2892127]]
+
+LOG | Attempting to set extra ASE parameters
+
+LOG | No ASE parameters provided.
+Created the atom object!
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Generating cube file.
+
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Initial espresso.ppi job failed.
+
+LOG | Re-attempting espresso.ppi job.
+
+LOG | pp.x argument: ['mpirun', '-np', '1', 'pp.x', '-in', 'espresso.ppi', '>', 'espresso.ppo']
+
+LOG | Calculating Defect Formation Energy from VAC_1
+
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE-main/
+
+LOG | Calculating DFE for VAC_1, charge = -1
+{-1: -132025.6330815864, 2: -132068.45397416825}
+
+LOG | No manual sigma provided for charge -1
+
+LOG | Sigma: 1.144979
+
+LOG | Accepted sigma: 1.144979 bohr
+made the input
+
+LOG | Coffee.py energy: 0.9067 eV
+made the input
+
+LOG | Coffee.py energy: 0.9548 eV
+made the input
+
+LOG | Coffee.py energy: 0.9871 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[0.9067, 0.9548, 0.9871]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 1.1502648648648675
+E_lattice = 0.2435648648648675
+FNV_energy: {'E_lattice': 0.2435648648648675, 'E_pot_corr': 0}
+
+LOG | Calculating DFE for VAC_1, charge = 2
+{-1: -132025.6330815864, 2: -132068.45397416825}
+
+LOG | No manual sigma provided for charge 2
+
+LOG | Sigma: 1.277522
+
+LOG | Accepted sigma: 1.277522 bohr
+made the input
+
+LOG | Coffee.py energy: 3.1516 eV
+made the input
+
+LOG | Coffee.py energy: 3.343 e
+made the input
+
+LOG | Coffee.py energy: 3.4717 eV
+Attmepting to calculate lattice energy correction 
+Setting correction energies 
+Creating one_by_V/A arrays
+[64, 125, 216]
+[0.015625   0.008      0.00462963]
+Computing fit
+[3.1516, 3.343, 3.4717]
+L2: 0.06998286194401186
+L3: 0.05598628955520949
+L4: 0.04665524129600791
+A
+B
+C
+D
+E_m_iso = 4.123048648648649
+E_lattice = 0.9714486486486491
+FNV_energy: {'E_lattice': 0.9714486486486491, 'E_pot_corr': 0}

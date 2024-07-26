@@ -21,7 +21,7 @@
       <calculation>ensemble</calculation>
       <restart_mode>restart</restart_mode>
       <prefix>PbI2</prefix>
-      <pseudo_dir>/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/</pseudo_dir>
+      <pseudo_dir>//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/</pseudo_dir>
       <outdir>./</outdir>
       <stress>true</stress>
       <forces>true</forces>
@@ -175,7 +175,7 @@
       <uspp>true</uspp>
       <paw>true</paw>
     </algorithmic_info>
-    <atomic_species ntyp="2" pseudo_dir="/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/">
+    <atomic_species ntyp="2" pseudo_dir="//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/">
       <species name="Pb">
         <mass>2.072000000000000e2</mass>
         <pseudo_file>Pb.pbe-dn-kjpaw_psl.1.0.0.UPF</pseudo_file>

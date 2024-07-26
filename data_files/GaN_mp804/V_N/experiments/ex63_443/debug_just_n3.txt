@@ -1,0 +1,72 @@
+##################################################################
+Log of Defect Tracking Run
+Date and time: 2024-04-22 07:54:36.827942
+##################################################################
+
+LOG | Environment variable ESPRESSO_PW_EXE': pw.x
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
+LOG | Calculate Pristine Energy
+LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0/0/unitcell
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -8497.85383679082 eV!
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/GaN_mp804/V_N/experiments/ex63_443/supercells/PRISTINE_0/0
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -407897.1987353943 eV!
+LOG | valid_file_found__supercell_output: True
+LOG | valid_file_found__wfcs: False
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: False
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | DFT Calculation of Pristine Supercell: True
+LOG | 
+Adding Defect: VAC, {'Ga': 0, 'N': -1}
+LOG | Environment variable ESPRESSO_PP_EXE': pp.x
+LOG | Calculating Defect Energy
+LOG | Calculating Defect Energy of defect: VAC_Ga96 N95_[1.62227566 0.93661982 4.63162392] N
+LOG | Running DFT for defect: VAC, num: 1, charge: -3
+LOG | Searching for espresso.pwo
+LOG | A valid espresso.pwo for the supercell has not been found.
+LOG | valid_file_found__supercell_output: False
+LOG | valid_file_found__wfcs: True
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: True
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: True
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Starting DFT calculation
+LOG | Supercell Matrix: 
+[[12.97819367  0.          0.        ]
+ [-6.48909683 11.23944541  0.        ]
+ [ 0.          0.         15.86466476]]
+LOG | Attempting to set extra ASE parameters
+LOG | No ASE parameters provided.
+LOG | Calculating Defect Formation Energy from VAC_1
+LOG | Epsilon value cannot be fetched from materials project.
+LOG | Epsilon manually set to 10.860179653335564.
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
+LOG | Calculating DFE for VAC_1, charge = -3
+LOG | No manual sigma provided for charge -3
+LOG | Sigma: 2.394174
+LOG | Accepted sigma: 2.394174 bohr
+LOG | Coffee.py energy: 2.1066 eV
+LOG | Coffee.py energy: 2.4711 eV
+LOG | Coffee.py energy: 2.7045 eV
+LOG | dV0p @ far from defect = 0.045730902545433626
+LOG | dVmD_model @ far from defect = -0.06349653879619363
+LOG | dVmD_vdiff @ far from defect = -0.06308255172161599
+LOG | #################################################
+LOG | Charge: -3
+LOG | total_FNV_correction: 1.7189380662203206
+LOG | #################################################

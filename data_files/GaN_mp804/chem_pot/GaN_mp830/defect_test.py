@@ -9,16 +9,16 @@ import subprocess
 import shutil
 
 #Defect Tracking
-from qe_defect_tracker import Tracker
+from defect_tracker import Tracker
 importlib.reload(Tracker)
 
 os.environ['ESPRESSO_PW_EXE'] = "pw.x"
 os.environ['ESPRESSO_PP_EXE'] = "pp.x"
-os.environ['COFFEE_DIR'] = "/trace/home/atimmins/packages/coffee/CoFFEE-main/"
+os.environ['COFFEE_DIR'] = "//home//packages/coffee/CoFFEE-main/"
 
 # STUFF TO CHANGE
 molecule_species_mpid = 'mp-830'
-structure_path = "/trace/group/acmegroup/atimmins/testing/BEEF_Research/GaN_mp804/structure_files/mp-830_conventional"
+structure_path = "//group///testing/BEEF_Research/GaN_mp804/structure_files/mp-830_conventional"
 kpts = [[4,4,4],[4,4,4]]
 ibrav = 1
 
@@ -40,7 +40,7 @@ input_data = {
     'control' : {
         'calculation': 'ensemble',
         'outdir':'./',
-        'pseudo_dir': '/trace/group/acmegroup/atimmins/packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
+        'pseudo_dir': '//group///packages/espresso/pseudo/psl_1.0.0/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
         'prefix':'PbI2',
         'verbosity':'high',
         'restart_mode': 'restart',

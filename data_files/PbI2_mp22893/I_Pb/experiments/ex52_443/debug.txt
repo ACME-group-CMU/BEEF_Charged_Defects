@@ -1,22 +1,22 @@
 ##################################################################
 Log of Defect Tracking Run
-Date and time: 2024-03-30 08:09:44.362297
+Date and time: 2024-06-27 11:44:40.521458
 ##################################################################
 
 LOG | Environment variable ESPRESSO_PW_EXE': pw.x
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Environment variable ESPRESSO_PP_EXE': pp.x
 LOG | Espresso Command: mpirun pw.x -nd 1 -in PREFIX.pwi > PREFIX.pwo
 LOG | Calculate Pristine Energy
 LOG | Running DFT for defect: PRISTINE, num: 0, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0/unitcell
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0/unitcell
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -27532.949713956205 eV!
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/PRISTINE_0/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1321581.647984827 eV!
@@ -36,7 +36,7 @@ LOG | Calculating Defect Energy
 LOG | Calculating Defect Energy of defect: SUB_Pb47 I97_[ 2.35589092  4.0796337  22.1330772 ] I
 LOG | Running DFT for defect: SUB, num: 1, charge: 0
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/0
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/0
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1317050.9004851 eV!
@@ -50,7 +50,7 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: 1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1317054.7766062145 eV!
@@ -64,7 +64,7 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: -1
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/-1
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/-1
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1317046.7141604656 eV!
@@ -78,7 +78,7 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: 2
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/2
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1317058.4728891747 eV!
@@ -92,7 +92,7 @@ LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
 LOG | Running DFT for defect: SUB, num: 1, charge: -2
 LOG | Searching for espresso.pwo
-LOG | Current directory: /trace/group/acmegroup/atimmins/testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/-2
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/-2
 LOG | The file 'espresso.pwo' has been found! Huzzah!
 LOG | Job complete found!
 LOG | Total energy = -1317042.0979638863 eV!
@@ -104,10 +104,42 @@ LOG | run_pw_unitcell: False
 LOG | run_pw_supercell: False
 LOG | run_pp_that_requires_wfc: False
 LOG | run_pp_that_doesnt_require_wfc: False
+LOG | Running DFT for defect: SUB, num: 1, charge: 3
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/3
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -1317062.613534835 eV!
+LOG | valid_file_found__supercell_output: True
+LOG | valid_file_found__wfcs: False
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: False
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
+LOG | Running DFT for defect: SUB, num: 1, charge: -3
+LOG | Searching for espresso.pwo
+LOG | Current directory: //group///testing/BEEF_Research/PbI2_mp22893/I_Pb/experiments/ex52_443/supercells/SUB_1/-3
+LOG | The file 'espresso.pwo' has been found! Huzzah!
+LOG | Job complete found!
+LOG | Total energy = -1317036.8620628654 eV!
+LOG | valid_file_found__supercell_output: True
+LOG | valid_file_found__wfcs: False
+LOG | valid_file_found__pp_requiring_wfcs: True
+LOG | valid_file_found__pp_not_requiring_wfcs: False
+LOG | run_pw_unitcell: False
+LOG | run_pw_supercell: False
+LOG | run_pp_that_requires_wfc: False
+LOG | run_pp_that_doesnt_require_wfc: True
+LOG | Generating post processing (either cube or xsf) files.
+LOG | pp.x argument: ['mpirun', 'pp.x', '-in', 'espresso_pn_1.ppi', '>', 'espresso_pn_1.ppo']
 LOG | Calculating Defect Formation Energy from SUB_1
 LOG | Epsilon value cannot be fetched from materials project.
 LOG | Epsilon manually set to 17.
-LOG | Environment variable COFFEE_DIR': /trace/home/atimmins/packages/coffee/CoFFEE_2.0/
+LOG | Environment variable COFFEE_DIR': //home//packages/coffee/CoFFEE_2.0/
 LOG | Calculating DFE for SUB_1, charge = 0
 LOG | Calculating DFE for SUB_1, charge = 1
 LOG | No manual sigma provided for charge 1
@@ -164,4 +196,32 @@ LOG | dVmD_vdiff @ far from defect = -0.06476724286151517
 LOG | #################################################
 LOG | Charge: -2
 LOG | total_FNV_correction: 0.10574331779827137
+LOG | #################################################
+LOG | Calculating DFE for SUB_1, charge = 3
+LOG | No manual sigma provided for charge 3
+LOG | Sigma: 1.636353
+LOG | Accepted sigma: 1.636353 bohr
+LOG | Coffee.py energy: 0.3695 eV
+LOG | Coffee.py energy: 0.0031 eV
+LOG | Coffee.py energy: 0.0 eV
+LOG | dV0p @ far from defect = -0.022231690146577526
+LOG | dVmD_model @ far from defect = 1.0563411725989735e-05
+LOG | dVmD_vdiff @ far from defect = 0.0314246552394486
+LOG | #################################################
+LOG | Charge: 3
+LOG | total_FNV_correction: 1.0106060772913348
+LOG | #################################################
+LOG | Calculating DFE for SUB_1, charge = -3
+LOG | No manual sigma provided for charge -3
+LOG | Sigma: 1.387129
+LOG | Accepted sigma: 1.387129 bohr
+LOG | Coffee.py energy: 0.039 eV
+LOG | Coffee.py energy: 0.0 eV
+LOG | Coffee.py energy: 0.0 eV
+LOG | dV0p @ far from defect = 0.022231690146577526
+LOG | dVmD_model @ far from defect = -2e-08
+LOG | dVmD_vdiff @ far from defect = -0.029509536103945078
+LOG | #################################################
+LOG | Charge: -3
+LOG | total_FNV_correction: 0.10313859372054908
 LOG | #################################################

@@ -1,5 +1,5 @@
 
-     Program POST-PROC v.7.1 starts on 17Mar2024 at 20:31:36 
+     Program POST-PROC v.7.1 starts on 23Jul2024 at 13:17:18 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,7 +15,7 @@
      Threads/MPI process:                     1
 
      MPI processes distributed on     1 nodes
-     2005232 MiB available memory on the printing compute node when the environment starts
+     1939601 MiB available memory on the printing compute node when the environment starts
  
 
      Reading xml data from directory:
@@ -189,10 +189,10 @@
      Min, Max charge:   -11.035231    0.839601
      Plot Type: 3D                     Output format: XCrySDen     
  
-     POST-PROC    :     50.28s CPU     51.27s WALL
+     POST-PROC    :     53.64s CPU     54.52s WALL
 
  
-   This run was terminated on:  20:32:27  17Mar2024            
+   This run was terminated on:  13:18:13  23Jul2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
